@@ -21,18 +21,22 @@ namespace InventoryManagement
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
 
-            using(IDbConnection connection = new SqlConnection("Data Source=NEUTRONSTAR\\SQLEXPRESS;Initial Catalog=INVENTORY;Integrated Security=True;Encrypt=False"))
+            DB_Opertations dboperation =  new DB_Opertations();
+            dboperation.AddingData();
+
+
+            /*using(IDbConnection connection = new SqlConnection("Data Source=NEUTRONSTAR\\SQLEXPRESS;Initial Catalog=INVENTORY;Integrated Security=True;Encrypt=False"))
             {
                 connection.Open();
                 //Add Data
                 connection.Execute(
                     "insert into Personnel(PersonnelName,PersonnelSurname,PersonnelDepartment) values(@PersonnelName,@PersonnelSurname,@PersonnelDepartment)",
-                    new Personnel { PersonnelName = "Jane", PersonnelSurname = "Smith", PersonnelDepartment ="IT" }
+                    new Personnel { PersonnelName = "Emerald", PersonnelSurname = "Houston", PersonnelDepartment ="RD" }
                     );
                 //Get Data
                 List<Personnel> personnelsList = connection.Query<Personnel>("select * from Personnel").ToList();
                 connection.Close();
-            }
+            }*/
         }
     }
 }
