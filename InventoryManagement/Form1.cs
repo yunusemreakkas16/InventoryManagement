@@ -12,14 +12,27 @@ namespace InventoryManagement
 {
     public partial class Form1 : Form
     {
+        
+        public static Form1 Instance { get; private set; }              //Saved Form instance
         public Form1()
         {
             InitializeComponent();
+            Instance = this;
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            Form2 AssigmentPanel = new Form2();                      // To create new form
+            this.Hide();                                            // To hide current form
+            AssigmentPanel.Show();                                 // Show new form
+        }
+
+        private void MaintenanceButton_Click(object sender, EventArgs e)
+        {
+            Form3 MaintenancePanel = new Form3();
+            this.Hide();
+            MaintenancePanel.Show();
         }
     }
 }

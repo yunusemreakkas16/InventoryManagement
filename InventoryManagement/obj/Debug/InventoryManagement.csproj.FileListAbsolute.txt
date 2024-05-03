@@ -11,3 +11,5 @@ C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryMana
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\Inventor.F96114ED.Up2Date
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.exe
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.pdb
+C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form2.resources
+C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form3.resources

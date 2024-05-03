@@ -14,15 +14,30 @@ namespace InventoryManagement
 {
     internal class DB_Opertations
     {
-        public void AddingData()
+        static IDbConnection dbConnection = new SqlConnection("Data Source=NEUTRONSTAR\\SQLEXPRESS;Initial Catalog=INVENTORY;Integrated Security=True;Encrypt=False");
+
+        public static List<Personnel>ListPersonnel()
         {
-            using (IDbConnection connection = new SqlConnection("Data Source=NEUTRONSTAR\\SQLEXPRESS;Initial Catalog=INVENTORY;Integrated Security=True;Encrypt=False"))
-            {
+            var personnels = dbConnection.Query<Personnel>("SELECT* FROM Personnel");
+            return personnels.ToList();
+        }
+        public static List<Item>ListItems()
+        {
+            var items = dbConnection.Query<Item>("SELECT * FROM Item");
+            return items.ToList();
+            
+        }
+        
+        public static List<Maintenance>ListMaintenanceList()
+        {
+            var maintenancelist = dbConnection.Query<Maintenance>("SELECT * FROM Maintenance");
+            return maintenancelist.ToList();
+        }
+        public static List<Assigment>ListAssigmentList()
 
-                var newPersonnel = new Personnel { PersonnelName = "Kudret", PersonnelSurname = "Aslan", PersonnelDepartment = "HR" };
-                connection.Execute("INSERT INTO Personnel (PersonnelName,PersonnelSurname,PersonnelDepartment) VALUES (@PersonnelName,@PersonnelSurname,@PersonnelDepartment)", newPersonnel);
-
-            }
+        {
+            var assigmentlist = dbConnection.Query<Assigment>("SELECT * FROM Assigment");
+            return assigmentlist.ToList();
         }
     }
 }
