@@ -1,6 +1,6 @@
 ﻿namespace InventoryManagement
 {
-    partial class Form2
+    partial class AssigmentPanel
     {
         /// <summary>
         /// Required designer variable.
@@ -43,30 +43,27 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 60);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 61);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(320, 400);
+            this.dataGridView1.Size = new System.Drawing.Size(240, 400);
             this.dataGridView1.TabIndex = 0;
             // 
             // dataGridView2
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(940, 60);
+            this.dataGridView2.Location = new System.Drawing.Point(1012, 61);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(320, 400);
+            this.dataGridView2.Size = new System.Drawing.Size(240, 400);
             this.dataGridView2.TabIndex = 2;
             // 
             // dataGridView3
             // 
-            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView3.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(330, 60);
+            this.dataGridView3.Location = new System.Drawing.Point(331, 61);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(600, 400);
             this.dataGridView3.TabIndex = 4;
@@ -74,7 +71,7 @@
             // PersonnelLabel
             // 
             this.PersonnelLabel.AutoSize = true;
-            this.PersonnelLabel.Location = new System.Drawing.Point(125, 35);
+            this.PersonnelLabel.Location = new System.Drawing.Point(95, 36);
             this.PersonnelLabel.Name = "PersonnelLabel";
             this.PersonnelLabel.Size = new System.Drawing.Size(73, 13);
             this.PersonnelLabel.TabIndex = 1;
@@ -83,7 +80,7 @@
             // ItemLabel
             // 
             this.ItemLabel.AutoSize = true;
-            this.ItemLabel.Location = new System.Drawing.Point(1090, 35);
+            this.ItemLabel.Location = new System.Drawing.Point(1126, 36);
             this.ItemLabel.Name = "ItemLabel";
             this.ItemLabel.Size = new System.Drawing.Size(27, 13);
             this.ItemLabel.TabIndex = 3;
@@ -92,7 +89,7 @@
             // AssigmentLabel
             // 
             this.AssigmentLabel.AutoSize = true;
-            this.AssigmentLabel.Location = new System.Drawing.Point(600, 35);
+            this.AssigmentLabel.Location = new System.Drawing.Point(599, 36);
             this.AssigmentLabel.Name = "AssigmentLabel";
             this.AssigmentLabel.Size = new System.Drawing.Size(55, 13);
             this.AssigmentLabel.TabIndex = 5;
@@ -118,7 +115,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(100, 475);
+            this.button1.Location = new System.Drawing.Point(70, 475);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 25);
             this.button1.TabIndex = 8;
@@ -128,7 +125,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(1050, 475);
+            this.button2.Location = new System.Drawing.Point(1090, 475);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 25);
             this.button2.TabIndex = 9;
@@ -156,7 +153,7 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Form2
+            // AssigmentPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -176,7 +173,7 @@
             this.Controls.Add(this.dataGridView1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MaximizeBox = false;
-            this.Name = "Form2";
+            this.Name = "AssigmentPanel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assigment Panel";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

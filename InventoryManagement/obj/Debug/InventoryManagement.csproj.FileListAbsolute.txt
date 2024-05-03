@@ -13,3 +13,20 @@ C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryMana
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.pdb
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form2.resources
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form3.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\bin\Debug\InventoryManagement.exe.config
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\bin\Debug\InventoryManagement.exe
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\bin\Debug\InventoryManagement.pdb
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\bin\Debug\Dapper.dll
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\bin\Debug\Dapper.xml
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csproj.AssemblyReference.cache
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form1.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form2.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form3.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Properties.Resources.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csproj.GenerateResource.cache
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csproj.CoreCompileInputs.cache
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\Inventor.F96114ED.Up2Date
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.exe
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.pdb
+C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form4.resources
+C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form5.resources

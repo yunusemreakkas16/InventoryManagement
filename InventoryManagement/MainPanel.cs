@@ -23,7 +23,7 @@ namespace InventoryManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 AssigmentPanel = new Form2();                      // To create new form
+            AssigmentPanel AssigmentPanel = new AssigmentPanel();                      // To create new form
             this.Hide();                                            // To hide current form
             AssigmentPanel.Show();                                 // Show new form
         }
@@ -33,20 +33,6 @@ namespace InventoryManagement
             Form3 MaintenancePanel = new Form3();
             this.Hide();
             MaintenancePanel.Show();
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            Form4 PersonnelPanel = new Form4();
-            this.Hide();
-            PersonnelPanel.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Form5 ItemPanel = new Form5();
-            this.Hide();
-            ItemPanel.Show();
         }
     }
 }
