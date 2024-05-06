@@ -20,7 +20,7 @@ namespace InventoryManagement
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             DB_Operations dbOperation = new DB_Operations();
-            Application.Run(new Form1());
+            Application.Run(new MainPanelForm());
         }
     }
 }
