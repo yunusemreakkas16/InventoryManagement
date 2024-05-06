@@ -15,8 +15,8 @@ namespace InventoryManagement
         public Form3()
         {
             InitializeComponent();
-            dataGridView1.DataSource = DB_Opertations.ListMaintenanceList();    // Shows data when Maintenance Panel is opened
-            dataGridView2.DataSource = DB_Opertations.ListItems();              // Shows data when Maintenance Panel is opened
+            dataGridView1.DataSource = DB_Operations.ListMaintenanceList();    // Shows data when Maintenance Panel is opened
+            dataGridView2.DataSource = DB_Operations.ListItems();              // Shows data when Maintenance Panel is opened
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -29,14 +29,14 @@ namespace InventoryManagement
         {
             dataGridView1.DataSource = null;                                    // Sets the Gridview's data source to null to avoid binding conflict
             dataGridView1.Rows.Clear();                                         // Clears the Gridview's Rows
-            dataGridView1.DataSource = DB_Opertations.ListMaintenanceList();    // Sets the Gridview's data source to a list of object retrieved from the database
+            dataGridView1.DataSource = DB_Operations.ListMaintenanceList();    // Sets the Gridview's data source to a list of object retrieved from the database
         }
 
         private void button1_Click(object sender, EventArgs e)
         {   
             dataGridView2.DataSource = null;
             dataGridView2.Rows.Clear();
-            dataGridView2.DataSource = DB_Opertations.ListItems();
+            dataGridView2.DataSource = DB_Operations.ListItems();
         }
 
     }

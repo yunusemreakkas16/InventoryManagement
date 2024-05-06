@@ -49,9 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\Assigment.cs" />
+    <Compile Include="Entities\Assignment.cs" />
     <Compile Include="Entities\Item.cs" />
-    <Compile Include="DB_Opertations.cs" />
+    <Compile Include="DB_Operations.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

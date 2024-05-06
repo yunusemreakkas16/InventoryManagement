@@ -3,7 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\masa\u00FCst\u00FC\\db_projects\\inventorymanagement\\inventorymanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\masa\u00FCst\u00FC\\db_projects\\inventorymanagement\\inventorymanagement\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\masa\u00FCst\u00FC\\db_projects\\inventorymanagement\\inventorymanagement\\db_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\db_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\masa\u00FCst\u00FC\\db_projects\\inventorymanagement\\inventorymanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -11,44 +27,20 @@
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\masa\u00FCst\u00FC\\db_projects\\inventorymanagement\\inventorymanagement\\entities\\maintenance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\entities\\maintenance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\db_opertations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\db_opertations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\inventorymanagement\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -68,7 +60,7 @@
         },
         {
           "DockedWidth": 330,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -76,40 +68,56 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form2.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Form2.cs",
+              "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form2.cs",
+              "RelativeToolTip": "InventoryManagement\\Form2.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T13:07:59.084Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Form5.cs [Design]",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form5.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Form5.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form5.cs [Design]",
               "RelativeToolTip": "InventoryManagement\\Form5.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T13:41:18.539Z"
+              "WhenOpened": "2024-05-03T13:41:18.539Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Form4.cs [Design]",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form4.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Form4.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form4.cs [Design]",
               "RelativeToolTip": "InventoryManagement\\Form4.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T13:41:08.226Z"
+              "WhenOpened": "2024-05-03T13:41:08.226Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form3.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Form3.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form3.cs [Design]",
               "RelativeToolTip": "InventoryManagement\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T08:47:03.721Z"
+              "WhenOpened": "2024-05-02T08:47:03.721Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form2.cs [Design]",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form2.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Form2.cs",
@@ -121,99 +129,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form1.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Form1.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form1.cs [Design]",
               "RelativeToolTip": "InventoryManagement\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T10:39:41.017Z"
+              "WhenOpened": "2024-04-29T10:39:41.017Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form1.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Form1.cs",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form1.cs",
-              "RelativeToolTip": "InventoryManagement\\Form1.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAUwDAAAAAdAAAA",
+              "DocumentIndex": 2,
+              "Title": "DB_Operations.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\DB_Operations.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\DB_Operations.cs",
+              "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\DB_Operations.cs",
+              "RelativeToolTip": "InventoryManagement\\DB_Operations.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAiwEYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T12:13:28.114Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form2.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Form2.cs",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form2.cs",
-              "RelativeToolTip": "InventoryManagement\\Form2.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABIAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T06:37:21.269Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form3.cs",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form3.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Form3.cs",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form3.cs",
-              "RelativeToolTip": "InventoryManagement\\Form3.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-02T11:21:01.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form4.cs",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form4.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\Form4.cs",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form4.cs",
-              "RelativeToolTip": "InventoryManagement\\Form4.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAADwvx4AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T14:01:49.873Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DB_Opertations.cs",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\DB_Opertations.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\DB_Opertations.cs",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\DB_Opertations.cs",
-              "RelativeToolTip": "InventoryManagement\\DB_Opertations.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T12:04:13.245Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\App.config",
-              "RelativeDocumentMoniker": "InventoryManagement\\App.config",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\App.config",
-              "RelativeToolTip": "InventoryManagement\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-30T14:01:09.693Z",
+              "WhenOpened": "2024-04-30T12:04:13.245Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Program.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Program.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Program.cs",
               "RelativeToolTip": "InventoryManagement\\Program.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA2wBYAAAApAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAADwvxYAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T14:41:16.762Z"
+              "WhenOpened": "2024-04-29T14:41:16.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form4.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form4.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Form4.cs",
+              "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Form4.cs",
+              "RelativeToolTip": "InventoryManagement\\Form4.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAjwCcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T07:26:48.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Maintenance.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Entities\\Maintenance.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\Entities\\Maintenance.cs",
+              "ToolTip": "C:\\Users\\murat\\OneDrive\\Masa\u00FCst\u00FC\\DB_Projects\\InventoryManagement\\InventoryManagement\\Entities\\Maintenance.cs",
+              "RelativeToolTip": "InventoryManagement\\Entities\\Maintenance.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T11:45:15.596Z",
+              "EditorCaption": ""
             }
           ]
         }

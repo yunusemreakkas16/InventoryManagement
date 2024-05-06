@@ -19,7 +19,7 @@ namespace InventoryManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            DB_Opertations dbOperation = new DB_Opertations();
+            DB_Operations dbOperation = new DB_Operations();
             Application.Run(new Form1());
         }
     }

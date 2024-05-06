@@ -23,9 +23,9 @@ namespace InventoryManagement
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 AssigmentPanel = new Form2();                      // To create new form
+            Form2 AssignmentPanel = new Form2();                      // To create new form
             this.Hide();                                            // To hide current form
-            AssigmentPanel.Show();                                 // Show new form
+            AssignmentPanel.Show();                                 // Show new form
         }
 
         private void MaintenanceButton_Click(object sender, EventArgs e)

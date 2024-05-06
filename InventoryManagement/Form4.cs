@@ -16,20 +16,25 @@ namespace InventoryManagement
         {
             InitializeComponent();
 
-            dataGridView1.DataSource = DB_Opertations.ListPersonnel();
+            dataGridView1.DataSource = DB_Operations.ListPersonnel();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource =null;
             dataGridView1.Rows.Clear();
-            dataGridView1.DataSource = DB_Opertations.ListPersonnel();
+            dataGridView1.DataSource = DB_Operations.ListPersonnel();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Form1.Instance.Show();
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

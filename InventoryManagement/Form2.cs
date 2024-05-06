@@ -17,9 +17,9 @@ namespace InventoryManagement
             InitializeComponent();
 
             // Executes Grid view when form opens
-            dataGridView1.DataSource = DB_Opertations.ListPersonnel();
-            dataGridView2.DataSource = DB_Opertations.ListItems();
-            dataGridView3.DataSource = DB_Opertations.ListAssigmentList();
+            dataGridView1.DataSource = DB_Operations.ListPersonnel();
+            dataGridView2.DataSource = DB_Operations.ListItems();
+            dataGridView3.DataSource = DB_Operations.ListAssignmentList();
         }
 
 
@@ -35,7 +35,7 @@ namespace InventoryManagement
             dataGridView1.Rows.Clear();
 
             //Refresh Button for Personnels
-            dataGridView1.DataSource = DB_Opertations.ListPersonnel();
+            dataGridView1.DataSource = DB_Operations.ListPersonnel();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -44,7 +44,7 @@ namespace InventoryManagement
             dataGridView2.Rows.Clear();
 
             //Refresh Button for Items
-            dataGridView2.DataSource = DB_Opertations.ListItems();
+            dataGridView2.DataSource = DB_Operations.ListItems();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace InventoryManagement
             dataGridView3.Rows.Clear();
 
             //Refresh Button for Assigment List
-            dataGridView3.DataSource = DB_Opertations.ListAssigmentList();
+            dataGridView3.DataSource = DB_Operations.ListAssignmentList();
         }
     }
 }

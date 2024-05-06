@@ -15,14 +15,14 @@ namespace InventoryManagement
         public Form5()
         {
             InitializeComponent();
-            dataGridView1.DataSource = DB_Opertations.ListItems();
+            dataGridView1.DataSource = DB_Operations.ListItems();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = null;
             dataGridView1.Rows.Clear();
-            dataGridView1.DataSource = DB_Opertations.ListItems();
+            dataGridView1.DataSource = DB_Operations.ListItems();
         }
 
         private void button1_Click(object sender, EventArgs e)
