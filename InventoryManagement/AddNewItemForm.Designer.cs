@@ -51,7 +51,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(319, 85);
+            this.label1.Location = new System.Drawing.Point(320, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 4;
@@ -60,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(319, 140);
+            this.label2.Location = new System.Drawing.Point(320, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 5;
@@ -69,7 +69,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(313, 195);
+            this.label3.Location = new System.Drawing.Point(320, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 6;
@@ -77,28 +77,28 @@
             // 
             // ItemNametextBox
             // 
-            this.ItemNametextBox.Location = new System.Drawing.Point(275, 104);
+            this.ItemNametextBox.Location = new System.Drawing.Point(275, 100);
             this.ItemNametextBox.Name = "ItemNametextBox";
             this.ItemNametextBox.Size = new System.Drawing.Size(150, 20);
             this.ItemNametextBox.TabIndex = 7;
             // 
             // ItemTypetextBox
             // 
-            this.ItemTypetextBox.Location = new System.Drawing.Point(275, 156);
+            this.ItemTypetextBox.Location = new System.Drawing.Point(275, 150);
             this.ItemTypetextBox.Name = "ItemTypetextBox";
             this.ItemTypetextBox.Size = new System.Drawing.Size(150, 20);
             this.ItemTypetextBox.TabIndex = 8;
             // 
             // ItemStatustextBox
             // 
-            this.ItemStatustextBox.Location = new System.Drawing.Point(275, 211);
+            this.ItemStatustextBox.Location = new System.Drawing.Point(275, 200);
             this.ItemStatustextBox.Name = "ItemStatustextBox";
             this.ItemStatustextBox.Size = new System.Drawing.Size(150, 20);
             this.ItemStatustextBox.TabIndex = 9;
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(307, 265);
+            this.Save.Location = new System.Drawing.Point(307, 250);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(75, 23);
             this.Save.TabIndex = 10;
@@ -121,7 +121,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Back);
             this.Name = "AddNewItemForm";
-            this.Text = "AddNewItemForm";
+            this.Text = "Add New Item Form";
             this.ResumeLayout(false);
             this.PerformLayout();
 

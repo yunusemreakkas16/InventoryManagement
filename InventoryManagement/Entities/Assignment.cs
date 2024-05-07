@@ -8,8 +8,7 @@ namespace InventoryManagement
 {
     internal class Assignment
     {
-        public Personnel Personnel { get; set; }
-        public Item Item { get; set; }
+
 
         public int AssignmentId { get; set; }
         public DateTime AssignmentDate { get; set; } = DateTime.Today;       //date!

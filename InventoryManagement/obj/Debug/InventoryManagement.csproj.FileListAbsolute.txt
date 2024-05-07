@@ -32,3 +32,5 @@ C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryMana
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.ItemPanelForm.resources
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.AddNewPersonnelForm.resources
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.AddNewItemForm.resources
+C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.AddNewAssignmentForm.resources
+C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.AddNewMaintenanceRecordForm.resources

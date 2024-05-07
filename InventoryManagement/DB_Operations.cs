@@ -56,7 +56,7 @@ namespace InventoryManagement
         public static void AddAssignment(string personnelName, string personnelSurname, string itemName, DateTime assignmentDate, DateTime assignmentEndDate)
         {
             var personnelId = dbConnection.Query<int>("SELECT PersonnelId FROM Personnel WHERE PersonnelName = @PersonnelName AND PersonnelSurname = @PersonnelSurname", new { personnelName, personnelSurname }).Single();
-            var itemId = dbConnection.Query<int>("SELECT ItemId FROM Item WHERE ItemName = @ItemName",itemName).Single();
+            var itemId = dbConnection.Query<int>("SELECT ItemId FROM Item WHERE ItemName = @ItemName", new { itemName }).Single();
 
             var newAssignment = new Assignment {AssignmentDate = assignmentDate, AssignmentEndDate = assignmentEndDate, FK_PersonnelId = personnelId, FK_ItemId = itemId};
             dbConnection.Execute("INSERT INTO Assignment (AssignmentDate, AssignmentEndDate, FK_PersonnelId, FK_ItemId) VALUES (@AssignmentDate, @AssignmentEndDate, @FK_PersonnelId, @FK_ItemId)",newAssignment);
@@ -64,8 +64,8 @@ namespace InventoryManagement
 
         public static void AddMaintenance(int itemId, byte status, DateTime maintenanceDate, DateTime maintenanceEndDate)
         {
-            var newMaintenance = new Maintenance { FK_ItemId = itemId, MaintenanceDate = maintenanceDate, MaintenanceEndDate = maintenanceEndDate };
-            dbConnection.Execute("INSERT INTO Maintenance (FK_ItemId, MaintenanceDate, MaintenanceEndDate) VALUES (@FK_ItemId, @MaintenanceDate, @MaintenanceEndDate)", newMaintenance);
+            var newMaintenance = new Maintenance { FK_ItemId = itemId, MaintenanceStatus = status, MaintenanceDate = maintenanceDate, MaintenanceEndDate = maintenanceEndDate };
+            dbConnection.Execute("INSERT INTO Maintenance (FK_ItemId, MaintenanceStatus, MaintenanceDate, MaintenanceEndDate) VALUES (@FK_ItemId, @MaintenanceStatus, @MaintenanceDate, @MaintenanceEndDate)", newMaintenance);
         }
 
 

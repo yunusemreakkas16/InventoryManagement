@@ -23,11 +23,7 @@ namespace InventoryManagement
         }
 
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            MainPanelForm.Instance.Show();
-            this.Close();
-        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -54,6 +50,19 @@ namespace InventoryManagement
 
             //Refresh Button for Assigment List
             dataGridView3.DataSource = DB_Operations.ListAssignmentList();
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            MainPanelForm.Instance.Show();
+            this.Close();
+        }
+
+        private void NewAssigmentButton_Click(object sender, EventArgs e)
+        {
+            AddNewAssignmentForm addMaintenanceRecordPanel = new AddNewAssignmentForm();
+            addMaintenanceRecordPanel.Show();
+            this.Close();
         }
     }
 }

@@ -19,11 +19,7 @@ namespace InventoryManagement
             dataGridView2.DataSource = DB_Operations.ListItems();              // Shows data when Maintenance Panel is opened
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            MainPanelForm.Instance.Show();                  //Return to Main Interface                  
-            this.Close();                           //Closes  a Form
-        }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -39,5 +35,17 @@ namespace InventoryManagement
             dataGridView2.DataSource = DB_Operations.ListItems();
         }
 
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            MainPanelForm.Instance.Show();                  //Return to Main Interface                  
+            this.Close();                                   //Closes  a Form
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            AddNewMaintenanceRecordForm addNewMaintenanceRecordForm = new AddNewMaintenanceRecordForm();
+            addNewMaintenanceRecordForm.Show();
+            this.Close();
+        }
     }
 }
