@@ -49,92 +49,152 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddNewAssignmentForm.cs">
+    <Compile Include="AddOperationForms\AddNewAssignmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewAssignmentForm.Designer.cs">
+    <Compile Include="AddOperationForms\AddNewAssignmentForm.Designer.cs">
       <DependentUpon>AddNewAssignmentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNewItemForm.cs">
+    <Compile Include="AddOperationForms\AddNewItemForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewItemForm.Designer.cs">
+    <Compile Include="AddOperationForms\AddNewItemForm.Designer.cs">
       <DependentUpon>AddNewItemForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNewMaintenanceRecordForm.cs">
+    <Compile Include="AddOperationForms\AddNewMaintenanceRecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewMaintenanceRecordForm.Designer.cs">
+    <Compile Include="AddOperationForms\AddNewMaintenanceRecordForm.Designer.cs">
       <DependentUpon>AddNewMaintenanceRecordForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddNewPersonnelForm.cs">
+    <Compile Include="AddOperationForms\AddNewPersonnelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddNewPersonnelForm.Designer.cs">
+    <Compile Include="AddOperationForms\AddNewPersonnelForm.Designer.cs">
       <DependentUpon>AddNewPersonnelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteOperationForms\DeleteAssignmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteOperationForms\DeleteAssignmentForm.Designer.cs">
+      <DependentUpon>DeleteAssignmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteOperationForms\DeleteMaintenanceRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteOperationForms\DeleteMaintenanceRecordForm.Designer.cs">
+      <DependentUpon>DeleteMaintenanceRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteOperationForms\DeleteItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteOperationForms\DeleteItemForm.Designer.cs">
+      <DependentUpon>DeleteItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteOperationForms\DeletePersonnelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteOperationForms\DeletePersonnelForm.Designer.cs">
+      <DependentUpon>DeletePersonnelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Assignment.cs" />
     <Compile Include="Entities\Item.cs" />
     <Compile Include="DB_Operations.cs" />
-    <Compile Include="Forms\MainPanelForm.cs">
+    <Compile Include="PanelForms\MainPanelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MainPanelForm.Designer.cs">
+    <Compile Include="PanelForms\MainPanelForm.Designer.cs">
       <DependentUpon>MainPanelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Entities\Maintenance.cs" />
     <Compile Include="Entities\Personnel.cs" />
-    <Compile Include="Forms\AssignmentForm.cs">
+    <Compile Include="PanelForms\AssignmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AssignmentForm.Designer.cs">
+    <Compile Include="PanelForms\AssignmentForm.Designer.cs">
       <DependentUpon>AssignmentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MaintenanceForm.cs">
+    <Compile Include="PanelForms\MaintenanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MaintenanceForm.Designer.cs">
+    <Compile Include="PanelForms\MaintenanceForm.Designer.cs">
       <DependentUpon>MaintenanceForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\PersonnelPanelForm.cs">
+    <Compile Include="PanelForms\PersonnelPanelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\PersonnelPanelForm.Designer.cs">
+    <Compile Include="PanelForms\PersonnelPanelForm.Designer.cs">
       <DependentUpon>PersonnelPanelForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ItemPanelForm.cs">
+    <Compile Include="PanelForms\ItemPanelForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ItemPanelForm.Designer.cs">
+    <Compile Include="PanelForms\ItemPanelForm.Designer.cs">
       <DependentUpon>ItemPanelForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddNewAssignmentForm.resx">
+    <Compile Include="UpdateAssignmentRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateAssignmentRecordForm.Designer.cs">
+      <DependentUpon>UpdateAssignmentRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateMaintenanceRecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMaintenanceRecordForm.Designer.cs">
+      <DependentUpon>UpdateMaintenanceRecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateOperationForms\UpdateItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateOperationForms\UpdateItemForm.Designer.cs">
+      <DependentUpon>UpdateItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateOperationForms\UpdatePersonnelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateOperationForms\UpdatePersonnelForm.Designer.cs">
+      <DependentUpon>UpdatePersonnelForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddOperationForms\AddNewAssignmentForm.resx">
       <DependentUpon>AddNewAssignmentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNewItemForm.resx">
+    <EmbeddedResource Include="AddOperationForms\AddNewItemForm.resx">
       <DependentUpon>AddNewItemForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNewMaintenanceRecordForm.resx">
+    <EmbeddedResource Include="AddOperationForms\AddNewMaintenanceRecordForm.resx">
       <DependentUpon>AddNewMaintenanceRecordForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddNewPersonnelForm.resx">
+    <EmbeddedResource Include="AddOperationForms\AddNewPersonnelForm.resx">
       <DependentUpon>AddNewPersonnelForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MainPanelForm.resx">
+    <EmbeddedResource Include="DeleteOperationForms\DeleteAssignmentForm.resx">
+      <DependentUpon>DeleteAssignmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteOperationForms\DeleteMaintenanceRecordForm.resx">
+      <DependentUpon>DeleteMaintenanceRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteOperationForms\DeleteItemForm.resx">
+      <DependentUpon>DeleteItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteOperationForms\DeletePersonnelForm.resx">
+      <DependentUpon>DeletePersonnelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelForms\MainPanelForm.resx">
       <DependentUpon>MainPanelForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AssignmentForm.resx">
+    <EmbeddedResource Include="PanelForms\AssignmentForm.resx">
       <DependentUpon>AssignmentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MaintenanceForm.resx">
+    <EmbeddedResource Include="PanelForms\MaintenanceForm.resx">
       <DependentUpon>MaintenanceForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\PersonnelPanelForm.resx">
+    <EmbeddedResource Include="PanelForms\PersonnelPanelForm.resx">
       <DependentUpon>PersonnelPanelForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ItemPanelForm.resx">
+    <EmbeddedResource Include="PanelForms\ItemPanelForm.resx">
       <DependentUpon>ItemPanelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -146,6 +206,18 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UpdateAssignmentRecordForm.resx">
+      <DependentUpon>UpdateAssignmentRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMaintenanceRecordForm.resx">
+      <DependentUpon>UpdateMaintenanceRecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateOperationForms\UpdateItemForm.resx">
+      <DependentUpon>UpdateItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateOperationForms\UpdatePersonnelForm.resx">
+      <DependentUpon>UpdatePersonnelForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

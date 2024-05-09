@@ -12,5 +12,6 @@ namespace InventoryManagement
         public string ItemName { get; set; } // limit 50 characters!
         public Byte ItemType { get; set; }  // tiny int!
         public Byte ItemStatus { get; set;} //tiny int!
+        public string ItemTypes { get; set;} //tiny int!
     }
 }
