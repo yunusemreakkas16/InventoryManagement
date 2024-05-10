@@ -26,9 +26,8 @@ namespace InventoryManagement
         }
         public static List<Item> ListItems()
         {
-            var items = dbConnection.Query<Item>(@"select ItemId,ItemName, CASE WHEN ItemType = 0 THEN 'ELECTRONICS'  WHEN ItemType = 1 THEN 'FURNITURE'   WHEN ItemType = 2 THEN 'VEHICLES' WHEN ItemType = 3 THEN'OUTDOOR&SPORTS'  ELSE 'UNDEFINED' END AS ItemTypes, ItemStatus from Item");
+            var items = dbConnection.Query<Item>("SELECT * FROM Item");
             return items.ToList();
-
         }
 
         public static List<Maintenance> ListMaintenanceList()
@@ -143,7 +142,7 @@ namespace InventoryManagement
 
 
 
-                query = query.TrimEnd(',', ' ');             // Removes last comma
+                query = query.TrimEnd(',', ' ');                                                // Removes last comma
 
                 query += " WHERE PersonnelId = @PersonnelId";
                 parameters.Add("@PersonnelId", personnelId);
@@ -172,13 +171,13 @@ namespace InventoryManagement
                 return;
             }
 
-            dbConnection.Execute("UPDATE Assignment SET AssignmentEndDate = @AssignmentEndDate WHERE AssignmentId = @AssignmentId", new { AssignmentEndDate = endDate, AssignmentId= assignmentId });
+            dbConnection.Execute("UPDATE Assignment SET AssignmentEndDate = @endDate WHERE AssignmentId = @assignmentId", new { endDate, assignmentId });
             MessageBox.Show("Assignment record updated");
         }
 
-        public static void UpdateMaintenance(int maintenanceId, byte? maintenanceStatus = null, DateTime? maintenanceEndDate = null)
+        public static void UpdateMaintenance(int maintenanceId, byte? maintenanceStatus, DateTime? maintenanceEndDate)
         {
-            if ((maintenanceStatus == null) && (maintenanceEndDate == null) || maintenanceId == 0)
+            if ((!maintenanceStatus.HasValue) && (!maintenanceEndDate.HasValue) || maintenanceId == 0)
             {
                 MessageBox.Show("At least one field must be filled and the ID cannot be 0");
                 return;
@@ -187,9 +186,9 @@ namespace InventoryManagement
             var query = "UPDATE Maintenance SET ";
             var parameters = new DynamicParameters();
 
-            if (maintenanceStatus != null) { query += "MaintenanceStatus = @MaintenanceStatus, "; parameters.Add("@MaintenanceStatus", maintenanceStatus); }
+            if (maintenanceStatus.HasValue) { query += "MaintenanceStatus = @MaintenanceStatus, "; parameters.Add("@MaintenanceStatus", maintenanceStatus); }
 
-            if (maintenanceEndDate != null) { query += "MaintenanceEndDate = @MaintenanceEndDate, "; parameters.Add("@MaintenanceEndDate", maintenanceEndDate); }
+            if (maintenanceEndDate.HasValue) { query += "MaintenanceEndDate = @MaintenanceEndDate, "; parameters.Add("@MaintenanceEndDate", maintenanceEndDate); }
 
             query = query.TrimEnd(',', ' ');
             query += " WHERE MaintenanceId = @MaintenanceId";

@@ -17,8 +17,79 @@ namespace InventoryManagement
             InitializeComponent();
 
             // Executes Grid view when form opens
-            dataGridView1.DataSource = DB_Operations.ListPersonnel();
+
+            dataGridView2.AutoGenerateColumns = false;
+
+            // sets GridView manually to make columns
+
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "ItemId",
+                DataPropertyName = "ItemId",
+                HeaderText = "Item ID",
+            });
+
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "ItemName",
+                DataPropertyName = "ItemName",
+                HeaderText = "Item Name"
+            });
+
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "ItemType",
+                DataPropertyName = "Type",
+                HeaderText = "Item Type"
+            });
+
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "ItemStatus",
+                DataPropertyName = "Status",
+                HeaderText = "Item Status"
+            });
+
+
+            dataGridView3.AutoGenerateColumns = false;
+
+            dataGridView3.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "AssignmentId",
+                DataPropertyName = "AssignmentId",
+                HeaderText = "Assignment ID"
+            });
+
+            dataGridView3.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "AssignmentDate",
+                DataPropertyName= "AssignmentDate",
+                HeaderText = "Assignment Date"
+            });
+
+            dataGridView3.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "AssignmentEndDate",
+                DataPropertyName = "AssignmentEndDate",
+                HeaderText = "Assignment End Date"
+            });
+
+            dataGridView3.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "PersonnelId",
+                DataPropertyName = "FK_PersonnelId",
+                HeaderText = "Personnel ID"
+            });
+
+            dataGridView3.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "ItemId",
+                DataPropertyName = "FK_ItemId",
+                HeaderText = "Item ID"
+            });
+
             dataGridView2.DataSource = DB_Operations.ListItems();
+            dataGridView1.DataSource = DB_Operations.ListPersonnel();
             dataGridView3.DataSource = DB_Operations.ListAssignmentList();
         }
 

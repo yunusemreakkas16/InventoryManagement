@@ -100,6 +100,7 @@
     <Compile Include="Entities\Assignment.cs" />
     <Compile Include="Entities\Item.cs" />
     <Compile Include="DB_Operations.cs" />
+    <Compile Include="EnumTranslate.cs" />
     <Compile Include="PanelForms\MainPanelForm.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -15,6 +15,77 @@ namespace InventoryManagement
         public MaintenanceForm()
         {
             InitializeComponent();
+
+            dataGridView2.AutoGenerateColumns = false;
+
+            // sets GridView manually to make columns
+
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "ItemId",
+                DataPropertyName = "ItemId",
+                HeaderText = "Item ID",
+            });
+
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "ItemName",
+                DataPropertyName = "ItemName",
+                HeaderText = "Item Name"
+            });
+
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "ItemType",
+                DataPropertyName = "Type",
+                HeaderText = "Item Type"
+            });
+
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "ItemStatus",
+                DataPropertyName = "Status",
+                HeaderText = "Item Status"
+            });
+
+
+
+            dataGridView1.AutoGenerateColumns = false;
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {   Name = "MaintenanceId",
+                DataPropertyName = "MaintenanceId",
+                HeaderText = "Maintenance ID"
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn 
+            {
+                Name = "MaintenanceStatus",
+                DataPropertyName = "Status",
+                HeaderText = "Maintenance Status"
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "MaintenanceDate",
+                DataPropertyName = "MaintenanceDate",
+                HeaderText = "Maintenance Date"
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "MaintenanceEndDate",
+                DataPropertyName = "MaintenanceEndDate",
+                HeaderText = "Maintenance End Date"
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "ItemId",
+                DataPropertyName = "FK_ItemId",
+                HeaderText = "Item ID"
+            });
+
             dataGridView1.DataSource = DB_Operations.ListMaintenanceList();    // Shows data when Maintenance Panel is opened
             dataGridView2.DataSource = DB_Operations.ListItems();              // Shows data when Maintenance Panel is opened
         }
