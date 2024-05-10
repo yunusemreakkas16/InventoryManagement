@@ -167,7 +167,7 @@ namespace InventoryManagement
         {
             if (assignmentId == 0 || !endDate.HasValue)
             {
-                MessageBox.Show("At least one field must be filled and the ID cannot be 0");
+                MessageBox.Show("ID cannot be 0");
                 return;
             }
 

@@ -135,16 +135,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UpdateAssignmentRecordForm.cs">
+    <Compile Include="UpdateOperationForms\UpdateAssignmentRecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateAssignmentRecordForm.Designer.cs">
+    <Compile Include="UpdateOperationForms\UpdateAssignmentRecordForm.Designer.cs">
       <DependentUpon>UpdateAssignmentRecordForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="UpdateMaintenanceRecordForm.cs">
+    <Compile Include="UpdateOperationForms\UpdateMaintenanceRecordForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UpdateMaintenanceRecordForm.Designer.cs">
+    <Compile Include="UpdateOperationForms\UpdateMaintenanceRecordForm.Designer.cs">
       <DependentUpon>UpdateMaintenanceRecordForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UpdateOperationForms\UpdateItemForm.cs">
@@ -207,10 +207,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UpdateAssignmentRecordForm.resx">
+    <EmbeddedResource Include="UpdateOperationForms\UpdateAssignmentRecordForm.resx">
       <DependentUpon>UpdateAssignmentRecordForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UpdateMaintenanceRecordForm.resx">
+    <EmbeddedResource Include="UpdateOperationForms\UpdateMaintenanceRecordForm.resx">
       <DependentUpon>UpdateMaintenanceRecordForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UpdateOperationForms\UpdateItemForm.resx">
