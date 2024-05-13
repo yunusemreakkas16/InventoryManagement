@@ -24,18 +24,25 @@ namespace InventoryManagement
             this.Close();
         }
 
+        private void AddNewMaintenanceRecordForm_Load(object sender, EventArgs e)
+        {
+            var itemIds = DB_Operations.ListItems().Select(i=> i.ItemId).ToList();
+            ItemIdcomboBox.DataSource = itemIds;
+        }
+
         private void Save_Click(object sender, EventArgs e)
         {
             // Check textboxes are empty or null
-            if (!string.IsNullOrWhiteSpace(ItemIdtextBox.Text) && !string.IsNullOrWhiteSpace(StatustextBox.Text) && !string.IsNullOrWhiteSpace(MaintenanceDatetextBox.Text) && !string.IsNullOrWhiteSpace(MaintenanceDateEndtextBox.Text))
+            if (!string.IsNullOrWhiteSpace(StatustextBox.Text) && !string.IsNullOrWhiteSpace(MaintenanceDatetextBox.Text) && !string.IsNullOrWhiteSpace(MaintenanceDateEndtextBox.Text))
             {
+                int selectedItemId = Convert.ToInt32(ItemIdcomboBox.SelectedItem);
+
                 DateTime date;
                 DateTime endDate;
                 byte status;
-                int itemId;
-                if (DateTime.TryParse(MaintenanceDatetextBox.Text, out date) && DateTime.TryParse(MaintenanceDateEndtextBox.Text, out endDate) && byte.TryParse(StatustextBox.Text, out status) && int.TryParse(ItemIdtextBox.Text, out itemId))
+                if (DateTime.TryParse(MaintenanceDatetextBox.Text, out date) && DateTime.TryParse(MaintenanceDateEndtextBox.Text, out endDate) && byte.TryParse(StatustextBox.Text, out status))
                 {
-                    DB_Operations.AddMaintenance(itemId, status, date, endDate);
+                    DB_Operations.AddMaintenance(selectedItemId, status, date, endDate);
                     
                 }
                 else

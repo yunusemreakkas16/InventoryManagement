@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.BackButton = new System.Windows.Forms.Button();
-            this.ItemIdtextBox = new System.Windows.Forms.TextBox();
             this.StatustextBox = new System.Windows.Forms.TextBox();
             this.MaintenanceDatetextBox = new System.Windows.Forms.TextBox();
             this.MaintenanceDateEndtextBox = new System.Windows.Forms.TextBox();
@@ -38,6 +37,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Save = new System.Windows.Forms.Button();
+            this.ItemIdcomboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BackButton
@@ -50,30 +50,23 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // ItemIdtextBox
-            // 
-            this.ItemIdtextBox.Location = new System.Drawing.Point(275, 100);
-            this.ItemIdtextBox.Name = "ItemIdtextBox";
-            this.ItemIdtextBox.Size = new System.Drawing.Size(150, 20);
-            this.ItemIdtextBox.TabIndex = 1;
-            // 
             // StatustextBox
             // 
-            this.StatustextBox.Location = new System.Drawing.Point(275, 150);
+            this.StatustextBox.Location = new System.Drawing.Point(270, 150);
             this.StatustextBox.Name = "StatustextBox";
             this.StatustextBox.Size = new System.Drawing.Size(150, 20);
             this.StatustextBox.TabIndex = 2;
             // 
             // MaintenanceDatetextBox
             // 
-            this.MaintenanceDatetextBox.Location = new System.Drawing.Point(275, 200);
+            this.MaintenanceDatetextBox.Location = new System.Drawing.Point(270, 200);
             this.MaintenanceDatetextBox.Name = "MaintenanceDatetextBox";
             this.MaintenanceDatetextBox.Size = new System.Drawing.Size(150, 20);
             this.MaintenanceDatetextBox.TabIndex = 3;
             // 
             // MaintenanceDateEndtextBox
             // 
-            this.MaintenanceDateEndtextBox.Location = new System.Drawing.Point(275, 250);
+            this.MaintenanceDateEndtextBox.Location = new System.Drawing.Point(270, 250);
             this.MaintenanceDateEndtextBox.Name = "MaintenanceDateEndtextBox";
             this.MaintenanceDateEndtextBox.Size = new System.Drawing.Size(150, 20);
             this.MaintenanceDateEndtextBox.TabIndex = 4;
@@ -116,7 +109,7 @@
             // 
             // Save
             // 
-            this.Save.Location = new System.Drawing.Point(315, 299);
+            this.Save.Location = new System.Drawing.Point(305, 299);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(75, 25);
             this.Save.TabIndex = 9;
@@ -124,12 +117,21 @@
             this.Save.UseVisualStyleBackColor = true;
             this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
+            // ItemIdcomboBox
+            // 
+            this.ItemIdcomboBox.FormattingEnabled = true;
+            this.ItemIdcomboBox.Location = new System.Drawing.Point(270, 100);
+            this.ItemIdcomboBox.Name = "ItemIdcomboBox";
+            this.ItemIdcomboBox.Size = new System.Drawing.Size(150, 21);
+            this.ItemIdcomboBox.TabIndex = 10;
+            // 
             // AddNewMaintenanceRecordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 361);
             this.ControlBox = false;
+            this.Controls.Add(this.ItemIdcomboBox);
             this.Controls.Add(this.Save);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -138,10 +140,10 @@
             this.Controls.Add(this.MaintenanceDateEndtextBox);
             this.Controls.Add(this.MaintenanceDatetextBox);
             this.Controls.Add(this.StatustextBox);
-            this.Controls.Add(this.ItemIdtextBox);
             this.Controls.Add(this.BackButton);
             this.Name = "AddNewMaintenanceRecordForm";
             this.Text = "AddNewMaintenanceRecordForm";
+            this.Load += new System.EventHandler(this.AddNewMaintenanceRecordForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,7 +152,6 @@
         #endregion
 
         private System.Windows.Forms.Button BackButton;
-        private System.Windows.Forms.TextBox ItemIdtextBox;
         private System.Windows.Forms.TextBox StatustextBox;
         private System.Windows.Forms.TextBox MaintenanceDatetextBox;
         private System.Windows.Forms.TextBox MaintenanceDateEndtextBox;
@@ -159,5 +160,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Save;
+        private System.Windows.Forms.ComboBox ItemIdcomboBox;
     }
 }
