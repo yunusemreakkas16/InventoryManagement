@@ -24,29 +24,29 @@ namespace InventoryManagement
             this.Close();
         }
 
+        private void UpdateAssignmentRecordForm_Load(object sender, EventArgs e)
+        {
+            var AssignmentIds = DB_Operations.ListAssignmentList().Select(a=> a.AssignmentId).ToList();
+            AssignmentIdcomboBox.DataSource = AssignmentIds;
+        }
+
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            if(!string.IsNullOrWhiteSpace(AssignmentIdtextBox.Text))
-            {
-                int assignmentId;
-                DateTime endDate;
+            
+            int selectedAssignmentId = Convert.ToInt32(AssignmentIdcomboBox.SelectedItem);
 
-                bool isassignmentIdParsed = int.TryParse( AssignmentIdtextBox.Text, out assignmentId ) ;
-                bool isendDate = DateTime.TryParse(AssignmentEndDatetextBox.Text, out endDate);
+            DateTime endDate;
+            bool isendDate = DateTime.TryParse(AssignmentEndDatetextBox.Text, out endDate);
 
-                if(isassignmentIdParsed && isendDate)
+                if(isendDate)
                 {
-                    DB_Operations.UpdateAssignment(assignmentId, endDate);
+                    DB_Operations.UpdateAssignment(selectedAssignmentId, endDate);
                 }
                 else 
                 {
                     MessageBox.Show("Please fill the box with the proper value");
                 }
-            }
-            else
-            {
-                MessageBox.Show("Please fill  the boxes you left empy");
-            }
+            
         }
     }
 }

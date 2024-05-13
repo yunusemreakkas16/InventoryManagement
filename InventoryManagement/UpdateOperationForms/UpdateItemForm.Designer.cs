@@ -31,9 +31,9 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.ItemIdtextBox = new System.Windows.Forms.TextBox();
             this.ItemStatustextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.ItemIdcomboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BackButton
@@ -65,13 +65,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Item ID";
             // 
-            // ItemIdtextBox
-            // 
-            this.ItemIdtextBox.Location = new System.Drawing.Point(270, 100);
-            this.ItemIdtextBox.Name = "ItemIdtextBox";
-            this.ItemIdtextBox.Size = new System.Drawing.Size(150, 20);
-            this.ItemIdtextBox.TabIndex = 3;
-            // 
             // ItemStatustextBox
             // 
             this.ItemStatustextBox.Location = new System.Drawing.Point(270, 160);
@@ -88,21 +81,30 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Item Status";
             // 
+            // ItemIdcomboBox
+            // 
+            this.ItemIdcomboBox.FormattingEnabled = true;
+            this.ItemIdcomboBox.Location = new System.Drawing.Point(270, 100);
+            this.ItemIdcomboBox.Name = "ItemIdcomboBox";
+            this.ItemIdcomboBox.Size = new System.Drawing.Size(150, 21);
+            this.ItemIdcomboBox.TabIndex = 6;
+            // 
             // UpdateItemForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 361);
             this.ControlBox = false;
+            this.Controls.Add(this.ItemIdcomboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ItemStatustextBox);
-            this.Controls.Add(this.ItemIdtextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.BackButton);
             this.Name = "UpdateItemForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdateItemForm";
+            this.Load += new System.EventHandler(this.UpdateItemForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -113,8 +115,8 @@
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox ItemIdtextBox;
         private System.Windows.Forms.TextBox ItemStatustextBox;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox ItemIdcomboBox;
     }
 }

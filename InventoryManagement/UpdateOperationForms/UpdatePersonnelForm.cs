@@ -24,25 +24,16 @@ namespace InventoryManagement
             this.Close();
         }
 
+        private void UpdatePersonnelForm_load(object sender, EventArgs e)
+        {
+            var personnelIds = DB_Operations.ListPersonnel().Select(p=> p.PersonnelId).ToList();
+            PersonnelIdcomboBox.DataSource = personnelIds;
+        }
+
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            if(!string.IsNullOrWhiteSpace(PersonnelIdtextBox.Text))
-            {
-                int personnelId;
-
-                if(int.TryParse(PersonnelIdtextBox.Text, out personnelId))
-                {
-                    DB_Operations.UpdatePersonnel(personnelId,PersonnelNametextBox.Text,PersonnelSurnametextBox.Text,DepartmenttextBox.Text);
-                }
-                else
-                {
-                    MessageBox.Show("Please fill the ID box with the proper value.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("The ID field must be filled");
-            }
+            int selectedPersonnelId = Convert.ToInt32(PersonnelIdcomboBox.SelectedItem);
+            DB_Operations.UpdatePersonnel(selectedPersonnelId,PersonnelNametextBox.Text,PersonnelSurnametextBox.Text,DepartmenttextBox.Text);
         }
     }
 }

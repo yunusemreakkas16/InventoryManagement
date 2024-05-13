@@ -33,12 +33,12 @@
             this.PersonnelNametextBox = new System.Windows.Forms.TextBox();
             this.DepartmenttextBox = new System.Windows.Forms.TextBox();
             this.PersonnelSurnametextBox = new System.Windows.Forms.TextBox();
-            this.PersonnelIdtextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.PersonnelIdcomboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BackButton
@@ -81,13 +81,6 @@
             this.PersonnelSurnametextBox.Name = "PersonnelSurnametextBox";
             this.PersonnelSurnametextBox.Size = new System.Drawing.Size(150, 20);
             this.PersonnelSurnametextBox.TabIndex = 4;
-            // 
-            // PersonnelIdtextBox
-            // 
-            this.PersonnelIdtextBox.Location = new System.Drawing.Point(270, 100);
-            this.PersonnelIdtextBox.Name = "PersonnelIdtextBox";
-            this.PersonnelIdtextBox.Size = new System.Drawing.Size(150, 20);
-            this.PersonnelIdtextBox.TabIndex = 5;
             // 
             // label1
             // 
@@ -134,18 +127,26 @@
             this.label5.TabIndex = 10;
             this.label5.Text = "Please Fill the boxes   you want to edit";
             // 
+            // PersonnelIdcomboBox
+            // 
+            this.PersonnelIdcomboBox.FormattingEnabled = true;
+            this.PersonnelIdcomboBox.Location = new System.Drawing.Point(270, 100);
+            this.PersonnelIdcomboBox.Name = "PersonnelIdcomboBox";
+            this.PersonnelIdcomboBox.Size = new System.Drawing.Size(150, 21);
+            this.PersonnelIdcomboBox.TabIndex = 11;
+            // 
             // UpdatePersonnelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 361);
             this.ControlBox = false;
+            this.Controls.Add(this.PersonnelIdcomboBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.PersonnelIdtextBox);
             this.Controls.Add(this.PersonnelSurnametextBox);
             this.Controls.Add(this.DepartmenttextBox);
             this.Controls.Add(this.PersonnelNametextBox);
@@ -154,6 +155,7 @@
             this.Name = "UpdatePersonnelForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UpdatePersonnelForm";
+            this.Load += new System.EventHandler(this.UpdatePersonnelForm_load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,11 +168,11 @@
         private System.Windows.Forms.TextBox PersonnelNametextBox;
         private System.Windows.Forms.TextBox DepartmenttextBox;
         private System.Windows.Forms.TextBox PersonnelSurnametextBox;
-        private System.Windows.Forms.TextBox PersonnelIdtextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox PersonnelIdcomboBox;
     }
 }

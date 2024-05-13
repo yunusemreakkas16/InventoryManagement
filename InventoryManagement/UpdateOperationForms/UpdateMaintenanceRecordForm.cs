@@ -24,15 +24,18 @@ namespace InventoryManagement
             this.Close();
         }
 
+        private void UpdateMaintenanceRecordForm_Load(object sender, EventArgs e)
+        {
+            var maintenanceId = DB_Operations.ListMaintenanceList().Select(m => m.MaintenanceId).ToList();
+            MaintenanceIdcomboBox.DataSource = maintenanceId;
+        }
+
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(MaintenanceIdtextBox.Text))
-            {
-                int maintenanceId;
+                int selectedMaintenanceId = Convert.ToInt32(MaintenanceIdcomboBox.SelectedItem);
+
                 byte maintenanceStatus;
                 DateTime? maintenanceEndDate = null;
-
-                bool isMaintenanceIdParsed = int.TryParse(MaintenanceIdtextBox.Text, out maintenanceId);
                 bool isMaintenanceStatusParsed = byte.TryParse(MaintenanceStatustextBox.Text, out maintenanceStatus);
                 bool bmaintenanceDate = false;
 
@@ -42,19 +45,14 @@ namespace InventoryManagement
                     bmaintenanceDate = true;
                 }
                 
-                if (isMaintenanceIdParsed && (isMaintenanceStatusParsed || bmaintenanceDate))
+                if ((isMaintenanceStatusParsed || bmaintenanceDate))
                 {
-                    DB_Operations.UpdateMaintenance(maintenanceId, maintenanceStatus, maintenanceEndDate);
+                    DB_Operations.UpdateMaintenance(selectedMaintenanceId, maintenanceStatus, maintenanceEndDate);
                 }
                 else
                 {
                     MessageBox.Show("Please fill the boxes with the proper values");
                 }
-            }
-            else
-            {
-                MessageBox.Show("The ID field must be filled");
-            }
         }
 
     }
