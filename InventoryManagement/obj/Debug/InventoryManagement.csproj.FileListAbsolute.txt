@@ -16,9 +16,6 @@ C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\Inve
 C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\bin\Debug\Dapper.dll
 C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\bin\Debug\Dapper.xml
 C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csproj.AssemblyReference.cache
-C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form1.resources
-C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form2.resources
-C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Form3.resources
 C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.Properties.Resources.resources
 C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csproj.GenerateResource.cache
 C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.csproj.CoreCompileInputs.cache
@@ -42,3 +39,20 @@ C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryMana
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UpdatePersonnelForm.resources
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UpdateAssignmentRecordForm.resources
 C:\Users\murat\OneDrive\Masaüstü\DB_Projects\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UpdateMaintenanceRecordForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.AddNewAssignmentForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.AddNewItemForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.AddNewMaintenanceRecordForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.AddNewPersonnelForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.DeleteAssignmentForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.DeleteMaintenanceRecordForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.DeleteItemForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.DeletePersonnelForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.MainPanelForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.AssignmentForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.MaintenanceForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.PersonnelPanelForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.ItemPanelForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UpdateAssignmentRecordForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UpdateMaintenanceRecordForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UpdateItemForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UpdatePersonnelForm.resources

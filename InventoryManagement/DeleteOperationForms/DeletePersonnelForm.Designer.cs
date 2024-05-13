@@ -30,10 +30,10 @@
         {
             this.BackButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
-            this.PersonnelNametextBox = new System.Windows.Forms.TextBox();
-            this.PersonnelSurnametextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.NamecomboBox = new System.Windows.Forms.ComboBox();
+            this.SurnamecomboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BackButton
@@ -48,7 +48,7 @@
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(310, 225);
+            this.DeleteButton.Location = new System.Drawing.Point(305, 240);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 25);
             this.DeleteButton.TabIndex = 1;
@@ -56,24 +56,10 @@
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
-            // PersonnelNametextBox
-            // 
-            this.PersonnelNametextBox.Location = new System.Drawing.Point(275, 125);
-            this.PersonnelNametextBox.Name = "PersonnelNametextBox";
-            this.PersonnelNametextBox.Size = new System.Drawing.Size(150, 20);
-            this.PersonnelNametextBox.TabIndex = 2;
-            // 
-            // PersonnelSurnametextBox
-            // 
-            this.PersonnelSurnametextBox.Location = new System.Drawing.Point(278, 175);
-            this.PersonnelSurnametextBox.Name = "PersonnelSurnametextBox";
-            this.PersonnelSurnametextBox.Size = new System.Drawing.Size(150, 20);
-            this.PersonnelSurnametextBox.TabIndex = 3;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(310, 105);
+            this.label2.Location = new System.Drawing.Point(310, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(85, 13);
             this.label2.TabIndex = 5;
@@ -82,11 +68,27 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(305, 155);
+            this.label3.Location = new System.Drawing.Point(300, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(99, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Personnel Surname";
+            // 
+            // NamecomboBox
+            // 
+            this.NamecomboBox.FormattingEnabled = true;
+            this.NamecomboBox.Location = new System.Drawing.Point(270, 150);
+            this.NamecomboBox.Name = "NamecomboBox";
+            this.NamecomboBox.Size = new System.Drawing.Size(150, 21);
+            this.NamecomboBox.TabIndex = 7;
+            // 
+            // SurnamecomboBox
+            // 
+            this.SurnamecomboBox.FormattingEnabled = true;
+            this.SurnamecomboBox.Location = new System.Drawing.Point(270, 200);
+            this.SurnamecomboBox.Name = "SurnamecomboBox";
+            this.SurnamecomboBox.Size = new System.Drawing.Size(150, 21);
+            this.SurnamecomboBox.TabIndex = 8;
             // 
             // DeletePersonnelForm
             // 
@@ -94,14 +96,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 361);
             this.ControlBox = false;
+            this.Controls.Add(this.SurnamecomboBox);
+            this.Controls.Add(this.NamecomboBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.PersonnelSurnametextBox);
-            this.Controls.Add(this.PersonnelNametextBox);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.BackButton);
             this.Name = "DeletePersonnelForm";
             this.Text = "DeletePersonnelForm";
+            this.Load += new System.EventHandler(this.DeletePersonnelForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,9 +114,9 @@
 
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.TextBox PersonnelNametextBox;
-        private System.Windows.Forms.TextBox PersonnelSurnametextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox NamecomboBox;
+        private System.Windows.Forms.ComboBox SurnamecomboBox;
     }
 }

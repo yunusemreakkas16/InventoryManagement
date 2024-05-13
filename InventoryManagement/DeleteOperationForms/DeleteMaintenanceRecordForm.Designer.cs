@@ -30,8 +30,8 @@
         {
             this.BackButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
-            this.DeleteMaintenancetextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.maintenanceIdscomboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BackButton
@@ -54,13 +54,6 @@
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
-            // DeleteMaintenancetextBox
-            // 
-            this.DeleteMaintenancetextBox.Location = new System.Drawing.Point(270, 160);
-            this.DeleteMaintenancetextBox.Name = "DeleteMaintenancetextBox";
-            this.DeleteMaintenancetextBox.Size = new System.Drawing.Size(150, 20);
-            this.DeleteMaintenancetextBox.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -70,18 +63,27 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Maintenance ID";
             // 
+            // maintenanceIdscomboBox
+            // 
+            this.maintenanceIdscomboBox.FormattingEnabled = true;
+            this.maintenanceIdscomboBox.Location = new System.Drawing.Point(270, 160);
+            this.maintenanceIdscomboBox.Name = "maintenanceIdscomboBox";
+            this.maintenanceIdscomboBox.Size = new System.Drawing.Size(150, 21);
+            this.maintenanceIdscomboBox.TabIndex = 4;
+            // 
             // DeleteMaintenanceRecordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 361);
             this.ControlBox = false;
+            this.Controls.Add(this.maintenanceIdscomboBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.DeleteMaintenancetextBox);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.BackButton);
             this.Name = "DeleteMaintenanceRecordForm";
             this.Text = "DeleteMaintenanceRecordForm";
+            this.Load += new System.EventHandler(this.DeleteMaintenanceRecordForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,7 +93,7 @@
 
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.TextBox DeleteMaintenancetextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox maintenanceIdscomboBox;
     }
 }

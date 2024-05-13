@@ -30,8 +30,8 @@
         {
             this.BackButton = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
-            this.DeleteAssignmenttextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.AssignmentIdcomboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BackButton
@@ -54,13 +54,6 @@
             this.Delete.UseVisualStyleBackColor = true;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
-            // DeleteAssignmenttextBox
-            // 
-            this.DeleteAssignmenttextBox.Location = new System.Drawing.Point(270, 160);
-            this.DeleteAssignmenttextBox.Name = "DeleteAssignmenttextBox";
-            this.DeleteAssignmenttextBox.Size = new System.Drawing.Size(150, 20);
-            this.DeleteAssignmenttextBox.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -70,18 +63,27 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Assignment ID";
             // 
+            // AssignmentIdcomboBox
+            // 
+            this.AssignmentIdcomboBox.FormattingEnabled = true;
+            this.AssignmentIdcomboBox.Location = new System.Drawing.Point(270, 160);
+            this.AssignmentIdcomboBox.Name = "AssignmentIdcomboBox";
+            this.AssignmentIdcomboBox.Size = new System.Drawing.Size(150, 21);
+            this.AssignmentIdcomboBox.TabIndex = 4;
+            // 
             // DeleteAssignmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 361);
             this.ControlBox = false;
+            this.Controls.Add(this.AssignmentIdcomboBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.DeleteAssignmenttextBox);
             this.Controls.Add(this.Delete);
             this.Controls.Add(this.BackButton);
             this.Name = "DeleteAssignmentForm";
             this.Text = "DeleteAssignmentForm";
+            this.Load += new System.EventHandler(this.DeleteAssignmentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -91,7 +93,7 @@
 
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button Delete;
-        private System.Windows.Forms.TextBox DeleteAssignmenttextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox AssignmentIdcomboBox;
     }
 }

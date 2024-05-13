@@ -100,22 +100,43 @@ namespace InventoryManagement
 
         public static void DeletePersonnel(string name, string surname)
         {
-            dbConnection.Execute("DELETE FROM Personnel WHERE PersonnelName = @PersonnelName AND PersonnelSurname = @PersonnelSurname", new { PersonnelName = name, PersonnelSurname = surname });
+            if(string.IsNullOrEmpty(name) && string.IsNullOrEmpty(surname)) { MessageBox.Show("Name and Surname cannot be empty"); return; }
+
+            // Check Personnels names and surnames before Delete
+
+            var DoesPersonnelExist = dbConnection.Query<string>("SELECT PersonnelName, PersonnelSurname FROM Personnel WHERE PersonnelName = @name AND PersonnelSurname = @surname", new {name, surname}).SingleOrDefault();
+
+            if (DoesPersonnelExist != null) 
+            { 
+                dbConnection.Execute("DELETE FROM Personnel WHERE PersonnelName = @PersonnelName AND PersonnelSurname = @PersonnelSurname", new { PersonnelName = name, PersonnelSurname = surname });
+                MessageBox.Show("Personnel Deleted");
+            }
+            else 
+            { 
+                MessageBox.Show("The personnel’s name and surname did not match");
+                return; 
+            }
         }
 
         public static void DeleteItem(int itemId)
         {
+            if(itemId == 0) { MessageBox.Show("Item ID can not be 0"); return; }
             dbConnection.Execute("DELETE FROM Item WHERE ItemId = @ItemId", new { ItemId = itemId });
+            MessageBox.Show("Item Deleted");
         }
 
         public static void DeleteAssignment(int assignmentId)
         {
+            if(assignmentId == 0) { MessageBox.Show("Assignment ID can not be 0"); return; }
             dbConnection.Execute("DELETE FROM Assignment WHERE AssignmentId = @AssignmentId", new { AssignmentId = assignmentId });
+            MessageBox.Show("Assignment Record Deleted");
         }
 
         public static void DeleteMaintenance(int maintenanceId)
         {
+            if(maintenanceId == 0) { MessageBox.Show("Maintenance ID can not be 0"); return; }
             dbConnection.Execute("DELETE FROM Maintenance WHERE MaintenanceId = @MaintenanceId", new { MaintenanceId = maintenanceId });
+            MessageBox.Show("Maintenance Record Deleted");
         }
 
         //                                                                                      ***** Update Operations *****

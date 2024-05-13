@@ -16,6 +16,15 @@ namespace InventoryManagement
         {
             InitializeComponent();
         }
+        
+        private void DeletePersonnelForm_Load(object sender, EventArgs e)
+        {
+            var names = DB_Operations.ListPersonnel().Select(p => p.PersonnelName).ToList();
+            NamecomboBox.DataSource = names;
+            
+            var surnames = DB_Operations.ListPersonnel().Select(p => p.PersonnelSurname).ToList();
+            SurnamecomboBox.DataSource= surnames;
+        }
 
         private void BackButton_Click(object sender, EventArgs e)
         {
@@ -26,17 +35,12 @@ namespace InventoryManagement
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            // Check textboxes are empty or null
-            if (!string.IsNullOrWhiteSpace(PersonnelNametextBox.Text) && !string.IsNullOrWhiteSpace(PersonnelSurnametextBox.Text))
-            {
-                DB_Operations.DeletePersonnel(PersonnelNametextBox.Text, PersonnelSurnametextBox.Text);
-                MessageBox.Show("Personnel Deleted.");
-            }
-            else
-            {
-                // To warn user who  makes  empty spaces.
-                MessageBox.Show("Please fill the boxes that you’ve left empty.");
-            }
+            // Get the name and surname selected from the ComboBox
+            string selectedName = NamecomboBox.SelectedItem.ToString();
+            string selectedSurname = SurnamecomboBox.SelectedItem.ToString();
+
+            // Delete the personnel using the selected name and surname
+            DB_Operations.DeletePersonnel(selectedName, selectedSurname);
         }
     }
 }

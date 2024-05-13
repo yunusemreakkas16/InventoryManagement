@@ -17,32 +17,23 @@ namespace InventoryManagement
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BackButton_Click(object sender, EventArgs e)
         {
             ItemPanelForm itemPanelForm = new ItemPanelForm();
             itemPanelForm.Show();
             this.Close();
         }
 
+        private void DeleteItemForm_Load(object sender, EventArgs e)
+        {
+            var itemId = DB_Operations.ListItems().Select(i => i.ItemId).ToList();
+            ItemIdcomboBox.DataSource = itemId;
+        }
+
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(ItemIdtextBox.Text))
-            {
-                int itemId;
-                if (int.TryParse(ItemIdtextBox.Text, out itemId))
-                {
-                    DB_Operations.DeleteItem(itemId);
-                    MessageBox.Show("Item Deleted.");
-                }
-                else
-                {
-                    MessageBox.Show("Please fill the box with the proper value.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please fill in the box that you’ve left empty.");
-            }
+            int selectedItemId = Convert.ToInt32(ItemIdcomboBox.SelectedItem);
+            DB_Operations.DeleteItem(selectedItemId);
         }
     }
 }

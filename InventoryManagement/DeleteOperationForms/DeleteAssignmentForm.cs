@@ -17,6 +17,12 @@ namespace InventoryManagement
             InitializeComponent();
         }
 
+        private void DeleteAssignmentForm_Load(object sender, EventArgs e)
+        {
+            var assignmentId = DB_Operations.ListAssignmentList().Select(a=> a.AssignmentId).ToList();
+            AssignmentIdcomboBox.DataSource = assignmentId;
+        }
+
         private void BackButton_Click(object sender, EventArgs e)
         {
             AssignmentForm assignmentForm = new AssignmentForm();
@@ -26,20 +32,8 @@ namespace InventoryManagement
 
         private void Delete_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(DeleteAssignmenttextBox.Text))
-            {
-                int assignmentId;
-
-                if(int.TryParse(DeleteAssignmenttextBox.Text, out assignmentId))
-                {
-                    DB_Operations.DeleteAssignment(assignmentId);
-                    MessageBox.Show("Assignment Deleted");
-                }
-                else
-                {
-                    MessageBox.Show("Please fill the box with the proper value.");
-                }
-            }
+            int selectedAssignmentId = Convert.ToInt32(AssignmentIdcomboBox.SelectedItem);
+            DB_Operations.DeleteAssignment(selectedAssignmentId);
         }
     }
 }

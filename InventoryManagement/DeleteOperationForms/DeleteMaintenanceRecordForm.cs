@@ -23,21 +23,16 @@ namespace InventoryManagement
             this.Close();
         }
 
+        private void DeleteMaintenanceRecordForm_Load(object sender, EventArgs e)
+        {
+            var maintenanceids = DB_Operations.ListMaintenanceList().Select(m=> m.MaintenanceId).ToList();
+            maintenanceIdscomboBox.DataSource = maintenanceids;
+        }
+
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            if(!String.IsNullOrWhiteSpace(DeleteMaintenancetextBox.Text))
-            {
-                int maintenanceId;
-                if (int.TryParse(DeleteMaintenancetextBox.Text, out maintenanceId))
-                {
-                    DB_Operations.DeleteMaintenance(maintenanceId);
-                    MessageBox.Show("Maintenance Record Deleted");
-                }
-                else 
-                {
-                    MessageBox.Show("Please fill the box with the proper value.");
-                }
-            }
+            int selectedId = Convert.ToInt32(maintenanceIdscomboBox.SelectedItem);
+            DB_Operations.DeleteMaintenance(selectedId);
         }
 
 
