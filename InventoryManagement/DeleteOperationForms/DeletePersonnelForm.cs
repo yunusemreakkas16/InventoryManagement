@@ -19,10 +19,10 @@ namespace InventoryManagement
         
         private void DeletePersonnelForm_Load(object sender, EventArgs e)
         {
-            var names = DB_Operations.ListPersonnel().Select(p => p.PersonnelName).ToList();
+            var names = ComboBoxData.GetPersonnelNames();
             NamecomboBox.DataSource = names;
             
-            var surnames = DB_Operations.ListPersonnel().Select(p => p.PersonnelSurname).ToList();
+            var surnames = ComboBoxData.GetPersonnelSurnames();
             SurnamecomboBox.DataSource= surnames;
         }
 

@@ -26,7 +26,7 @@ namespace InventoryManagement
 
         private void UpdateMaintenanceRecordForm_Load(object sender, EventArgs e)
         {
-            var maintenanceId = DB_Operations.ListMaintenanceList().Select(m => m.MaintenanceId).ToList();
+            var maintenanceId = ComboBoxData.GetMaintenanceIds();
             MaintenanceIdcomboBox.DataSource = maintenanceId;
         }
 

@@ -166,7 +166,7 @@
             this.Name = "AddNewAssignmentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Assignment Panel";
-            this.Load += new System.EventHandler(this.AddNewAssignmentForm_Update);
+            this.Load += new System.EventHandler(this.AddNewAssignmentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

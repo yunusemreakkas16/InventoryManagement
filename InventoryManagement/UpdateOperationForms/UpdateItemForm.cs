@@ -26,7 +26,7 @@ namespace InventoryManagement
 
         private void UpdateItemForm_Load(object sender, EventArgs e)
         {
-            var itemIds = DB_Operations.ListItems().Select(i => i.ItemId).ToList();
+            var itemIds = ComboBoxData.GetItemsIds();
             ItemIdcomboBox.DataSource = itemIds;
         }
 

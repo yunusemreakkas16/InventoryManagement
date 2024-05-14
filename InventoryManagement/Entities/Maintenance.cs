@@ -13,7 +13,6 @@ namespace InventoryManagement
         Maintaining = 1,
         UnderRepair = 2,
         MaintenanceDone = 3,
-
     }
 
     internal class Maintenance

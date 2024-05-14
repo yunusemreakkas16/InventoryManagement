@@ -26,7 +26,7 @@ namespace InventoryManagement
 
         private void AddNewMaintenanceRecordForm_Load(object sender, EventArgs e)
         {
-            var itemIds = DB_Operations.ListItems().Select(i=> i.ItemId).ToList();
+            var itemIds = ComboBoxData.GetUnassignedItemIds();
             ItemIdcomboBox.DataSource = itemIds;
         }
 

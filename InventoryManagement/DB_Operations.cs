@@ -17,6 +17,11 @@ namespace InventoryManagement
     {
         static IDbConnection dbConnection = new SqlConnection("Data Source=NEUTRONSTAR\\SQLEXPRESS;Initial Catalog=INVENTORY;Integrated Security=True;Encrypt=False");
 
+        public static IDbConnection GetDbConnection()
+        {
+            return dbConnection;
+        }
+
         //                                                                                      ***** List Operations*****
 
         public static List<Personnel> ListPersonnel()
@@ -63,7 +68,7 @@ namespace InventoryManagement
             // To find item which  is assignable
 
 
-            var itemId = dbConnection.Query<int>("SELECT ItemId FROM Item WHERE ItemName = @ItemName AND ItemId NOT IN (SELECT FK_ItemId FROM Assignment)", new { itemName }).FirstOrDefault();
+            var itemId = dbConnection.Query<int>("SELECT ItemId FROM Item WHERE ItemName = @itemName AND ItemId NOT IN (SELECT FK_ItemId FROM Assignment)", new { itemName }).FirstOrDefault();
 
             if (itemId != 0)
             {

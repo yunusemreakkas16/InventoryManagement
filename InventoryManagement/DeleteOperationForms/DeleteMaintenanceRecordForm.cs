@@ -25,7 +25,7 @@ namespace InventoryManagement
 
         private void DeleteMaintenanceRecordForm_Load(object sender, EventArgs e)
         {
-            var maintenanceids = DB_Operations.ListMaintenanceList().Select(m=> m.MaintenanceId).ToList();
+            var maintenanceids = ComboBoxData.GetMaintenanceIds();
             maintenanceIdscomboBox.DataSource = maintenanceids;
         }
 

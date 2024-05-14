@@ -73,6 +73,7 @@
     <Compile Include="AddOperationForms\AddNewPersonnelForm.Designer.cs">
       <DependentUpon>AddNewPersonnelForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ComboBoxData.cs" />
     <Compile Include="DeleteOperationForms\DeleteAssignmentForm.cs">
       <SubType>Form</SubType>
     </Compile>

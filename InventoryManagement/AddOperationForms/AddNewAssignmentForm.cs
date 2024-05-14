@@ -24,15 +24,11 @@ namespace InventoryManagement
             this.Close();
         }
 
-        private void AddNewAssignmentForm_Update(object sender, EventArgs e)
+        private void AddNewAssignmentForm_Load(object sender, EventArgs e)
         {
-            var personnelNames = DB_Operations.ListPersonnel().Select(p=> p.PersonnelName).ToList();
-            var personnelSurnames = DB_Operations.ListPersonnel().Select(p=> p.PersonnelSurname).ToList();
-            var itemNames = DB_Operations.ListItems().Select(i=> i.ItemName).ToList();
-
-            PersonnelNamecomboBox.DataSource = personnelNames;
-            PersonnelSurnamecomboBox.DataSource = personnelSurnames;
-            ItemNamecomboBox.DataSource = itemNames;
+            PersonnelNamecomboBox.DataSource = ComboBoxData.GetPersonnelNames();
+            PersonnelSurnamecomboBox.DataSource = ComboBoxData.GetPersonnelSurnames();
+            ItemNamecomboBox.DataSource = ComboBoxData.GetUnassignedItemNames();
         }
 
         private void Save_Click(object sender, EventArgs e)

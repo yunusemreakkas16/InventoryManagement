@@ -26,7 +26,7 @@ namespace InventoryManagement
 
         private void UpdatePersonnelForm_load(object sender, EventArgs e)
         {
-            var personnelIds = DB_Operations.ListPersonnel().Select(p=> p.PersonnelId).ToList();
+            var personnelIds = ComboBoxData.GetPersonnelId();
             PersonnelIdcomboBox.DataSource = personnelIds;
         }
 

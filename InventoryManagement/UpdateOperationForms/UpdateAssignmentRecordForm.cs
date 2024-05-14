@@ -26,7 +26,7 @@ namespace InventoryManagement
 
         private void UpdateAssignmentRecordForm_Load(object sender, EventArgs e)
         {
-            var AssignmentIds = DB_Operations.ListAssignmentList().Select(a=> a.AssignmentId).ToList();
+            var AssignmentIds = ComboBoxData.GetAssignmentListIds();
             AssignmentIdcomboBox.DataSource = AssignmentIds;
         }
 

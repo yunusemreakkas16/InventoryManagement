@@ -19,7 +19,7 @@ namespace InventoryManagement
 
         private void DeleteAssignmentForm_Load(object sender, EventArgs e)
         {
-            var assignmentId = DB_Operations.ListAssignmentList().Select(a=> a.AssignmentId).ToList();
+            var assignmentId = ComboBoxData.GetAssignmentListIds();
             AssignmentIdcomboBox.DataSource = assignmentId;
         }
 
