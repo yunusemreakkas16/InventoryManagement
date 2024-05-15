@@ -15,6 +15,12 @@ namespace InventoryManagement
         public UpdateAssignmentRecordForm()
         {
             InitializeComponent();
+
+            // Set the Format property to Custom
+            this.AssignmentEnddateTimePicker.Format = DateTimePickerFormat.Custom;
+
+            // Set the CustomFormat property to an empty string
+            this.AssignmentEnddateTimePicker.CustomFormat = " ";
         }
 
         private void Back_Click(object sender, EventArgs e)
@@ -28,6 +34,12 @@ namespace InventoryManagement
         {
             var AssignmentIds = ComboBoxData.GetAssignmentListIds();
             AssignmentIdcomboBox.DataSource = AssignmentIds;
+        }
+
+        private void AssignmentEnddateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            this.AssignmentEnddateTimePicker.CustomFormat = null;
+
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)

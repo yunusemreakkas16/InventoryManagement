@@ -15,6 +15,18 @@ namespace InventoryManagement
         public AddNewMaintenanceRecordForm()
         {
             InitializeComponent();
+
+            // Set the Format property to Custom
+            this.MaintenancedateTimePicker.Format = DateTimePickerFormat.Custom;
+
+            // Set the CustomFormat property to an empty string
+            this.MaintenancedateTimePicker.CustomFormat = " ";
+
+            // Set the Format property to Custom
+            this.MaintenanceEnddateTimePicker.Format = DateTimePickerFormat.Custom;
+
+            // Set the CustomFormat property to an empty string
+            this.MaintenanceEnddateTimePicker.CustomFormat = " ";
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -28,6 +40,18 @@ namespace InventoryManagement
         {
             var itemIds = ComboBoxData.GetUnassignedItemIds();
             ItemIdcomboBox.DataSource = itemIds;
+        }
+
+        private void MaintenancedateTimePicker_ValueChanged(object send, EventArgs e)
+        {
+            this.MaintenancedateTimePicker.CustomFormat = null;
+
+        }
+
+        private void MaintenanceEnddateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            this.MaintenanceEnddateTimePicker.CustomFormat = null;
+
         }
 
         private void Save_Click(object sender, EventArgs e)

@@ -117,6 +117,7 @@
             this.MaintenancedateTimePicker.Name = "MaintenancedateTimePicker";
             this.MaintenancedateTimePicker.Size = new System.Drawing.Size(150, 20);
             this.MaintenancedateTimePicker.TabIndex = 11;
+            this.MaintenancedateTimePicker.ValueChanged += new System.EventHandler(this.MaintenancedateTimePicker_ValueChanged);
             // 
             // MaintenanceEnddateTimePicker
             // 
@@ -124,6 +125,7 @@
             this.MaintenanceEnddateTimePicker.Name = "MaintenanceEnddateTimePicker";
             this.MaintenanceEnddateTimePicker.Size = new System.Drawing.Size(150, 20);
             this.MaintenanceEnddateTimePicker.TabIndex = 12;
+            this.MaintenanceEnddateTimePicker.ValueChanged += new System.EventHandler(this.MaintenanceEnddateTimePicker_ValueChanged);
             // 
             // AddNewMaintenanceRecordForm
             // 

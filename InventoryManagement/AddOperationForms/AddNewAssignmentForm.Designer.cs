@@ -137,6 +137,7 @@
             this.AssignmentdateTimePicker.Name = "AssignmentdateTimePicker";
             this.AssignmentdateTimePicker.Size = new System.Drawing.Size(150, 20);
             this.AssignmentdateTimePicker.TabIndex = 15;
+            this.AssignmentdateTimePicker.ValueChanged += new System.EventHandler(this.AssignmentdateTimePicker_ValueChanged);
             // 
             // AssignmentEnddateTimePicker
             // 
@@ -144,6 +145,7 @@
             this.AssignmentEnddateTimePicker.Name = "AssignmentEnddateTimePicker";
             this.AssignmentEnddateTimePicker.Size = new System.Drawing.Size(150, 20);
             this.AssignmentEnddateTimePicker.TabIndex = 16;
+            this.AssignmentEnddateTimePicker.ValueChanged += new System.EventHandler(this.AssignmentEnddateTimePicker_ValueChanged);
             // 
             // AddNewAssignmentForm
             // 

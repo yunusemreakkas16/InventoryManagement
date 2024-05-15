@@ -15,6 +15,19 @@ namespace InventoryManagement
         public AddNewAssignmentForm()
         {
             InitializeComponent();
+
+            // Set the Format property to Custom
+            this.AssignmentdateTimePicker.Format = DateTimePickerFormat.Custom;
+
+            // Set the CustomFormat property to an empty string
+            this.AssignmentdateTimePicker.CustomFormat = " ";
+
+            // Set the Format property to Custom
+            this.AssignmentEnddateTimePicker.Format = DateTimePickerFormat.Custom;
+
+            // Set the CustomFormat property to an empty string
+            this.AssignmentEnddateTimePicker.CustomFormat = " ";
+
         }
 
         private void Back_Click(object sender, EventArgs e)
@@ -29,6 +42,16 @@ namespace InventoryManagement
             PersonnelNamecomboBox.DataSource = ComboBoxData.GetPersonnelNames();
             PersonnelSurnamecomboBox.DataSource = ComboBoxData.GetPersonnelSurnames();
             ItemNamecomboBox.DataSource = ComboBoxData.GetUnassignedItemNames();
+        }
+
+        private void AssignmentdateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            this.AssignmentdateTimePicker.CustomFormat = null;
+        }
+
+        private void AssignmentEnddateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            this.AssignmentEnddateTimePicker.CustomFormat = null;
         }
 
         private void Save_Click(object sender, EventArgs e)

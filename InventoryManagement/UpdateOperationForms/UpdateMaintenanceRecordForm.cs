@@ -16,6 +16,12 @@ namespace InventoryManagement
         public UpdateMaintenanceRecordForm()
         {
             InitializeComponent();
+
+            // Set the Format property to Custom
+            this.MaintenanceEnddateTimePicker.Format = DateTimePickerFormat.Custom;
+
+            // Set the CustomFormat property to an empty string
+            this.MaintenanceEnddateTimePicker.CustomFormat = " ";
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -34,25 +40,26 @@ namespace InventoryManagement
         private void MaintenanceEnddateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             this.MaintenanceEndDate = MaintenanceEnddateTimePicker.Value.Date;
+            this.MaintenanceEnddateTimePicker.CustomFormat = null;
         }
 
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-                int selectedMaintenanceId = Convert.ToInt32(MaintenanceIdcomboBox.SelectedItem);
+            int selectedMaintenanceId = Convert.ToInt32(MaintenanceIdcomboBox.SelectedItem);
 
-                byte maintenanceStatus;
-                bool isMaintenanceStatusParsed = byte.TryParse(MaintenanceStatustextBox.Text, out maintenanceStatus);
+            byte maintenanceStatus;
+            bool isMaintenanceStatusParsed = byte.TryParse(MaintenanceStatustextBox.Text, out maintenanceStatus);
 
                 
-                if ((isMaintenanceStatusParsed || this.MaintenanceEndDate.HasValue))
-                {
-                    DB_Operations.UpdateMaintenance(selectedMaintenanceId, maintenanceStatus, this.MaintenanceEndDate);
-                }
-                else
-                {
-                    MessageBox.Show("Please fill the boxes");
-                }
+            if ((isMaintenanceStatusParsed || this.MaintenanceEndDate.HasValue))
+            {
+                DB_Operations.UpdateMaintenance(selectedMaintenanceId, maintenanceStatus, this.MaintenanceEndDate);
+            }
+            else
+            {
+                MessageBox.Show("Please fill the boxes");
+            }
         }
 
     }

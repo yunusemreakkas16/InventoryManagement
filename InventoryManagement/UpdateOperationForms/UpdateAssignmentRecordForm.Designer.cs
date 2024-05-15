@@ -88,6 +88,7 @@
             this.AssignmentEnddateTimePicker.Name = "AssignmentEnddateTimePicker";
             this.AssignmentEnddateTimePicker.Size = new System.Drawing.Size(150, 20);
             this.AssignmentEnddateTimePicker.TabIndex = 7;
+            this.AssignmentEnddateTimePicker.ValueChanged += new System.EventHandler(this.AssignmentEnddateTimePicker_ValueChanged);
             // 
             // UpdateAssignmentRecordForm
             // 

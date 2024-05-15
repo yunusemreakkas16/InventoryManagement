@@ -3,31 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\addoperationforms\\addnewassignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\addoperationforms\\addnewassignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\addoperationforms\\addnewassignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\addoperationforms\\addnewassignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\addoperationforms\\addnewmaintenancerecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\addoperationforms\\addnewmaintenancerecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\updateoperationforms\\updatemaintenancerecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\updateoperationforms\\updatemaintenancerecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\updateoperationforms\\updatemaintenancerecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\updateoperationforms\\updateassignmentrecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\addoperationforms\\addnewassignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\addoperationforms\\addnewassignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\updateoperationforms\\updateassignmentrecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\updateoperationforms\\updateassignmentrecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\addoperationforms\\addnewmaintenancerecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\addoperationforms\\addnewmaintenancerecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\addoperationforms\\addnewmaintenancerecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\addoperationforms\\addnewmaintenancerecordform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\db_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\db_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\comboboxdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\comboboxdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\comboboxdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -52,7 +52,7 @@
         },
         {
           "DockedWidth": 330,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -60,51 +60,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AddNewAssignmentForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewAssignmentForm.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\AddOperationForms\\AddNewAssignmentForm.cs",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewAssignmentForm.cs [Design]",
-              "RelativeToolTip": "InventoryManagement\\AddOperationForms\\AddNewAssignmentForm.cs [Design]",
+              "DocumentIndex": 4,
+              "Title": "AddNewMaintenanceRecordForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewMaintenanceRecordForm.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\AddOperationForms\\AddNewMaintenanceRecordForm.cs",
+              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewMaintenanceRecordForm.cs [Design]",
+              "RelativeToolTip": "InventoryManagement\\AddOperationForms\\AddNewMaintenanceRecordForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-15T08:18:51.425Z",
+              "WhenOpened": "2024-05-15T09:40:36.652Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "UpdateMaintenanceRecordForm.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\UpdateOperationForms\\UpdateMaintenanceRecordForm.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\UpdateOperationForms\\UpdateMaintenanceRecordForm.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\UpdateOperationForms\\UpdateMaintenanceRecordForm.cs",
               "RelativeToolTip": "InventoryManagement\\UpdateOperationForms\\UpdateMaintenanceRecordForm.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAwCUAAAAAAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwCsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T07:45:16.825Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AddNewMaintenanceRecordForm.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewMaintenanceRecordForm.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\AddOperationForms\\AddNewMaintenanceRecordForm.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewMaintenanceRecordForm.cs",
               "RelativeToolTip": "InventoryManagement\\AddOperationForms\\AddNewMaintenanceRecordForm.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowDUAAABHAAAA",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAkwDQAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T07:30:20.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "UpdateAssignmentRecordForm.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\UpdateOperationForms\\UpdateAssignmentRecordForm.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\UpdateOperationForms\\UpdateAssignmentRecordForm.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\UpdateOperationForms\\UpdateAssignmentRecordForm.cs",
               "RelativeToolTip": "InventoryManagement\\UpdateOperationForms\\UpdateAssignmentRecordForm.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACcAAAA9AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T07:20:12.258Z",
               "EditorCaption": ""
@@ -117,7 +117,7 @@
               "RelativeDocumentMoniker": "InventoryManagement\\AddOperationForms\\AddNewAssignmentForm.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewAssignmentForm.cs",
               "RelativeToolTip": "InventoryManagement\\AddOperationForms\\AddNewAssignmentForm.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACwAAAB4AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAEMAAAB4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-15T06:42:35.562Z",
               "EditorCaption": ""
@@ -132,8 +132,7 @@
               "RelativeToolTip": "InventoryManagement\\ComboBoxData.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAADwvx8AAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T08:59:02.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-14T08:59:02.637Z"
             },
             {
               "$type": "Document",
@@ -145,8 +144,7 @@
               "RelativeToolTip": "InventoryManagement\\DB_Operations.cs",
               "ViewState": "AQIAAGgAAAAAAAAAAAAAwDwAAACKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T12:04:13.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T12:04:13.245Z"
             },
             {
               "$type": "Document",
