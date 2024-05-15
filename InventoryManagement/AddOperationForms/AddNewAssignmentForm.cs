@@ -37,27 +37,12 @@ namespace InventoryManagement
             string selectedSurname = PersonnelSurnamecomboBox.SelectedItem.ToString();
             string selectedItem = ItemNamecomboBox.SelectedItem.ToString();
 
-            DateTime assignmentDate;
-            DateTime assignmentEndDate;
+            DateTime assignmentDate, assignmentEndDate;
 
-            if (!string.IsNullOrWhiteSpace(AssignmentDatetextBox.Text) && !string.IsNullOrWhiteSpace(AssignmentEndDatetextBox.Text))
-            {
-                if (DateTime.TryParse(AssignmentDatetextBox.Text, out assignmentDate) && DateTime.TryParse(AssignmentEndDatetextBox.Text, out assignmentEndDate))
-                {
-                    DB_Operations.AddAssignment(selectedName, selectedSurname, selectedItem, assignmentDate, assignmentEndDate);
+            assignmentDate = AssignmentdateTimePicker.Value.Date;
+            assignmentEndDate = AssignmentEnddateTimePicker.Value.Date;
 
-                }
-                else
-                {
-                    MessageBox.Show("Please enter a valid date.");
-                }
-
-            }
-            else
-            {
-                // To warn user who  makes  empty spaces.
-                MessageBox.Show("Please fill the boxes that you’ve left empty.");
-            }
+            DB_Operations.AddAssignment(selectedName, selectedSurname, selectedItem, assignmentDate, assignmentEndDate);
         }
     }
 }

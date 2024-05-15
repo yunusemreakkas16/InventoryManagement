@@ -36,16 +36,11 @@ namespace InventoryManagement
             int selectedAssignmentId = Convert.ToInt32(AssignmentIdcomboBox.SelectedItem);
 
             DateTime endDate;
-            bool isendDate = DateTime.TryParse(AssignmentEndDatetextBox.Text, out endDate);
 
-                if(isendDate)
-                {
-                    DB_Operations.UpdateAssignment(selectedAssignmentId, endDate);
-                }
-                else 
-                {
-                    MessageBox.Show("Please fill the box with the proper value");
-                }
+            endDate = AssignmentEnddateTimePicker.Value.Date;
+            DB_Operations.UpdateAssignment(selectedAssignmentId, endDate);
+
+
             
         }
     }

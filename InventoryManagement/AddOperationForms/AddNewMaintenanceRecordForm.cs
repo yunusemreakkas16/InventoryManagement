@@ -33,28 +33,32 @@ namespace InventoryManagement
         private void Save_Click(object sender, EventArgs e)
         {
             // Check textboxes are empty or null
-            if (!string.IsNullOrWhiteSpace(StatustextBox.Text) && !string.IsNullOrWhiteSpace(MaintenanceDatetextBox.Text) && !string.IsNullOrWhiteSpace(MaintenanceDateEndtextBox.Text))
+            if (!string.IsNullOrWhiteSpace(StatustextBox.Text))
             {
                 int selectedItemId = Convert.ToInt32(ItemIdcomboBox.SelectedItem);
 
                 DateTime date;
                 DateTime endDate;
                 byte status;
-                if (DateTime.TryParse(MaintenanceDatetextBox.Text, out date) && DateTime.TryParse(MaintenanceDateEndtextBox.Text, out endDate) && byte.TryParse(StatustextBox.Text, out status))
+
+                date = MaintenancedateTimePicker.Value.Date;
+                endDate = MaintenanceEnddateTimePicker.Value.Date;
+
+                if (byte.TryParse(StatustextBox.Text, out status))
                 {
                     DB_Operations.AddMaintenance(selectedItemId, status, date, endDate);
                     
                 }
                 else
                 {
-                    MessageBox.Show("Please enter a valid values.");
+                    MessageBox.Show("Please enter a valid status value.");
                 }
 
             }
             else
             {
                 // To warn user who  makes  empty spaces.
-                MessageBox.Show("Please fill the boxes that you’ve left empty.");
+                MessageBox.Show("Please fill the box that you’ve left empty.");
             }
         }
     }

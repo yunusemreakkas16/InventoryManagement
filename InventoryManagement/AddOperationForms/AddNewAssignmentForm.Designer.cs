@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.Back = new System.Windows.Forms.Button();
-            this.AssignmentDatetextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Save = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.AssignmentEndDatetextBox = new System.Windows.Forms.TextBox();
             this.PersonnelNamecomboBox = new System.Windows.Forms.ComboBox();
             this.PersonnelSurnamecomboBox = new System.Windows.Forms.ComboBox();
             this.ItemNamecomboBox = new System.Windows.Forms.ComboBox();
+            this.AssignmentdateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.AssignmentEnddateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // Back
@@ -51,13 +51,6 @@
             this.Back.Text = "Back";
             this.Back.UseVisualStyleBackColor = true;
             this.Back.Click += new System.EventHandler(this.Back_Click);
-            // 
-            // AssignmentDatetextBox
-            // 
-            this.AssignmentDatetextBox.Location = new System.Drawing.Point(270, 200);
-            this.AssignmentDatetextBox.Name = "AssignmentDatetextBox";
-            this.AssignmentDatetextBox.Size = new System.Drawing.Size(150, 20);
-            this.AssignmentDatetextBox.TabIndex = 4;
             // 
             // label1
             // 
@@ -114,13 +107,6 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Assignment End Date";
             // 
-            // AssignmentEndDatetextBox
-            // 
-            this.AssignmentEndDatetextBox.Location = new System.Drawing.Point(270, 250);
-            this.AssignmentEndDatetextBox.Name = "AssignmentEndDatetextBox";
-            this.AssignmentEndDatetextBox.Size = new System.Drawing.Size(150, 20);
-            this.AssignmentEndDatetextBox.TabIndex = 3;
-            // 
             // PersonnelNamecomboBox
             // 
             this.PersonnelNamecomboBox.FormattingEnabled = true;
@@ -145,12 +131,28 @@
             this.ItemNamecomboBox.Size = new System.Drawing.Size(150, 21);
             this.ItemNamecomboBox.TabIndex = 14;
             // 
+            // AssignmentdateTimePicker
+            // 
+            this.AssignmentdateTimePicker.Location = new System.Drawing.Point(270, 200);
+            this.AssignmentdateTimePicker.Name = "AssignmentdateTimePicker";
+            this.AssignmentdateTimePicker.Size = new System.Drawing.Size(150, 20);
+            this.AssignmentdateTimePicker.TabIndex = 15;
+            // 
+            // AssignmentEnddateTimePicker
+            // 
+            this.AssignmentEnddateTimePicker.Location = new System.Drawing.Point(270, 250);
+            this.AssignmentEnddateTimePicker.Name = "AssignmentEnddateTimePicker";
+            this.AssignmentEnddateTimePicker.Size = new System.Drawing.Size(150, 20);
+            this.AssignmentEnddateTimePicker.TabIndex = 16;
+            // 
             // AddNewAssignmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 361);
             this.ControlBox = false;
+            this.Controls.Add(this.AssignmentEnddateTimePicker);
+            this.Controls.Add(this.AssignmentdateTimePicker);
             this.Controls.Add(this.ItemNamecomboBox);
             this.Controls.Add(this.PersonnelSurnamecomboBox);
             this.Controls.Add(this.PersonnelNamecomboBox);
@@ -160,8 +162,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.AssignmentDatetextBox);
-            this.Controls.Add(this.AssignmentEndDatetextBox);
             this.Controls.Add(this.Back);
             this.Name = "AddNewAssignmentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -175,16 +175,16 @@
         #endregion
 
         private System.Windows.Forms.Button Back;
-        private System.Windows.Forms.TextBox AssignmentDatetextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Save;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox AssignmentEndDatetextBox;
         private System.Windows.Forms.ComboBox PersonnelNamecomboBox;
         private System.Windows.Forms.ComboBox PersonnelSurnamecomboBox;
         private System.Windows.Forms.ComboBox ItemNamecomboBox;
+        private System.Windows.Forms.DateTimePicker AssignmentdateTimePicker;
+        private System.Windows.Forms.DateTimePicker AssignmentEnddateTimePicker;
     }
 }

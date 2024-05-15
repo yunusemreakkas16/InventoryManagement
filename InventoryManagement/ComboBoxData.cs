@@ -11,7 +11,9 @@ namespace InventoryManagement
 {
     internal class ComboBoxData
     {
-        //                                                                                ***Personnel Based Operations***
+
+        #region Personnel Based Operations
+
         public static List<string> GetPersonnelNames()
         {
             return DB_Operations.ListPersonnel().Select(p => p.PersonnelName).ToList();
@@ -27,12 +29,17 @@ namespace InventoryManagement
             return DB_Operations.ListPersonnel().Select(p => p.PersonnelId).ToList();
         }
 
-        //                                                                                  ***Item Based Operations***
+        #endregion
+
+
+
+        #region Item Based Operations
 
         public static List<int> GetItemsIds()
         {
             return DB_Operations.ListItems().Select(i => i.ItemId).ToList();
         }
+
         public static List<string> GetUnassignedItemNames()
         {
             var dbConnection = DB_Operations.GetDbConnection();
@@ -47,22 +54,28 @@ namespace InventoryManagement
             return items.ToList();
         }
 
-        //                                                                                  ***Assignment Based Operations***
+        #endregion
+
+
+
+        #region Assignment Based Operations
 
         public static List<int> GetAssignmentListIds()
         {
             return DB_Operations.ListAssignmentList().Select(a => a.AssignmentId).ToList();
-
         }
 
-        //                                                                                  ***Maintenance Based Operations***
+        #endregion
+
+
+        #region Maintenance Based Operations
 
         public static List <int> GetMaintenanceIds() 
         {
             return DB_Operations.ListMaintenanceList().Select(m => m.MaintenanceId).ToList();
         }
-            
-          
-            
+
+        #endregion
+
     }
 }

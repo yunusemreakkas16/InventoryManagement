@@ -30,14 +30,14 @@
         {
             this.BackButton = new System.Windows.Forms.Button();
             this.StatustextBox = new System.Windows.Forms.TextBox();
-            this.MaintenanceDatetextBox = new System.Windows.Forms.TextBox();
-            this.MaintenanceDateEndtextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.Save = new System.Windows.Forms.Button();
             this.ItemIdcomboBox = new System.Windows.Forms.ComboBox();
+            this.MaintenancedateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.MaintenanceEnddateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // BackButton
@@ -56,20 +56,6 @@
             this.StatustextBox.Name = "StatustextBox";
             this.StatustextBox.Size = new System.Drawing.Size(150, 20);
             this.StatustextBox.TabIndex = 2;
-            // 
-            // MaintenanceDatetextBox
-            // 
-            this.MaintenanceDatetextBox.Location = new System.Drawing.Point(270, 200);
-            this.MaintenanceDatetextBox.Name = "MaintenanceDatetextBox";
-            this.MaintenanceDatetextBox.Size = new System.Drawing.Size(150, 20);
-            this.MaintenanceDatetextBox.TabIndex = 3;
-            // 
-            // MaintenanceDateEndtextBox
-            // 
-            this.MaintenanceDateEndtextBox.Location = new System.Drawing.Point(270, 250);
-            this.MaintenanceDateEndtextBox.Name = "MaintenanceDateEndtextBox";
-            this.MaintenanceDateEndtextBox.Size = new System.Drawing.Size(150, 20);
-            this.MaintenanceDateEndtextBox.TabIndex = 4;
             // 
             // label1
             // 
@@ -125,20 +111,34 @@
             this.ItemIdcomboBox.Size = new System.Drawing.Size(150, 21);
             this.ItemIdcomboBox.TabIndex = 10;
             // 
+            // MaintenancedateTimePicker
+            // 
+            this.MaintenancedateTimePicker.Location = new System.Drawing.Point(270, 200);
+            this.MaintenancedateTimePicker.Name = "MaintenancedateTimePicker";
+            this.MaintenancedateTimePicker.Size = new System.Drawing.Size(150, 20);
+            this.MaintenancedateTimePicker.TabIndex = 11;
+            // 
+            // MaintenanceEnddateTimePicker
+            // 
+            this.MaintenanceEnddateTimePicker.Location = new System.Drawing.Point(270, 250);
+            this.MaintenanceEnddateTimePicker.Name = "MaintenanceEnddateTimePicker";
+            this.MaintenanceEnddateTimePicker.Size = new System.Drawing.Size(150, 20);
+            this.MaintenanceEnddateTimePicker.TabIndex = 12;
+            // 
             // AddNewMaintenanceRecordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 361);
             this.ControlBox = false;
+            this.Controls.Add(this.MaintenanceEnddateTimePicker);
+            this.Controls.Add(this.MaintenancedateTimePicker);
             this.Controls.Add(this.ItemIdcomboBox);
             this.Controls.Add(this.Save);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.MaintenanceDateEndtextBox);
-            this.Controls.Add(this.MaintenanceDatetextBox);
             this.Controls.Add(this.StatustextBox);
             this.Controls.Add(this.BackButton);
             this.Name = "AddNewMaintenanceRecordForm";
@@ -153,13 +153,13 @@
 
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.TextBox StatustextBox;
-        private System.Windows.Forms.TextBox MaintenanceDatetextBox;
-        private System.Windows.Forms.TextBox MaintenanceDateEndtextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button Save;
         private System.Windows.Forms.ComboBox ItemIdcomboBox;
+        private System.Windows.Forms.DateTimePicker MaintenancedateTimePicker;
+        private System.Windows.Forms.DateTimePicker MaintenanceEnddateTimePicker;
     }
 }

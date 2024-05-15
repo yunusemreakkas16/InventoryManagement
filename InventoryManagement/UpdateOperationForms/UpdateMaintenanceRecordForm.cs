@@ -12,6 +12,7 @@ namespace InventoryManagement
 {
     public partial class UpdateMaintenanceRecordForm : Form
     {
+        private DateTime? MaintenanceEndDate = null;
         public UpdateMaintenanceRecordForm()
         {
             InitializeComponent();
@@ -30,28 +31,27 @@ namespace InventoryManagement
             MaintenanceIdcomboBox.DataSource = maintenanceId;
         }
 
+        private void MaintenanceEnddateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            this.MaintenanceEndDate = MaintenanceEnddateTimePicker.Value.Date;
+        }
+
+
         private void UpdateButton_Click(object sender, EventArgs e)
         {
                 int selectedMaintenanceId = Convert.ToInt32(MaintenanceIdcomboBox.SelectedItem);
 
                 byte maintenanceStatus;
-                DateTime? maintenanceEndDate = null;
                 bool isMaintenanceStatusParsed = byte.TryParse(MaintenanceStatustextBox.Text, out maintenanceStatus);
-                bool bmaintenanceDate = false;
 
-                if (!string.IsNullOrEmpty(MaintenanceEndDatetextBox.Text))                   
-                {
-                    maintenanceEndDate = Convert.ToDateTime(MaintenanceEndDatetextBox.Text);
-                    bmaintenanceDate = true;
-                }
                 
-                if ((isMaintenanceStatusParsed || bmaintenanceDate))
+                if ((isMaintenanceStatusParsed || this.MaintenanceEndDate.HasValue))
                 {
-                    DB_Operations.UpdateMaintenance(selectedMaintenanceId, maintenanceStatus, maintenanceEndDate);
+                    DB_Operations.UpdateMaintenance(selectedMaintenanceId, maintenanceStatus, this.MaintenanceEndDate);
                 }
                 else
                 {
-                    MessageBox.Show("Please fill the boxes with the proper values");
+                    MessageBox.Show("Please fill the boxes");
                 }
         }
 

@@ -30,10 +30,10 @@
         {
             this.Back = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
-            this.AssignmentEndDatetextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.AssignmentIdcomboBox = new System.Windows.Forms.ComboBox();
+            this.AssignmentEnddateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // Back
@@ -55,13 +55,6 @@
             this.UpdateButton.Text = "Update";
             this.UpdateButton.UseVisualStyleBackColor = true;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
-            // 
-            // AssignmentEndDatetextBox
-            // 
-            this.AssignmentEndDatetextBox.Location = new System.Drawing.Point(270, 200);
-            this.AssignmentEndDatetextBox.Name = "AssignmentEndDatetextBox";
-            this.AssignmentEndDatetextBox.Size = new System.Drawing.Size(150, 20);
-            this.AssignmentEndDatetextBox.TabIndex = 2;
             // 
             // label1
             // 
@@ -89,16 +82,23 @@
             this.AssignmentIdcomboBox.Size = new System.Drawing.Size(150, 21);
             this.AssignmentIdcomboBox.TabIndex = 6;
             // 
+            // AssignmentEnddateTimePicker
+            // 
+            this.AssignmentEnddateTimePicker.Location = new System.Drawing.Point(270, 200);
+            this.AssignmentEnddateTimePicker.Name = "AssignmentEnddateTimePicker";
+            this.AssignmentEnddateTimePicker.Size = new System.Drawing.Size(150, 20);
+            this.AssignmentEnddateTimePicker.TabIndex = 7;
+            // 
             // UpdateAssignmentRecordForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 361);
             this.ControlBox = false;
+            this.Controls.Add(this.AssignmentEnddateTimePicker);
             this.Controls.Add(this.AssignmentIdcomboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.AssignmentEndDatetextBox);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.Back);
             this.Name = "UpdateAssignmentRecordForm";
@@ -114,9 +114,9 @@
 
         private System.Windows.Forms.Button Back;
         private System.Windows.Forms.Button UpdateButton;
-        private System.Windows.Forms.TextBox AssignmentEndDatetextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox AssignmentIdcomboBox;
+        private System.Windows.Forms.DateTimePicker AssignmentEnddateTimePicker;
     }
 }
