@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace InventoryManagement
 {
@@ -65,7 +66,15 @@ namespace InventoryManagement
             assignmentDate = AssignmentdateTimePicker.Value.Date;
             assignmentEndDate = AssignmentEnddateTimePicker.Value.Date;
 
-            DB_Operations.AddAssignment(selectedName, selectedSurname, selectedItem, assignmentDate, assignmentEndDate);
+            if (DateInRangeOperations.IsDateInRange(assignmentDate, assignmentEndDate))
+            {
+                DB_Operations.AddAssignment(selectedName, selectedSurname, selectedItem, assignmentDate, assignmentEndDate);
+            }
+            else
+            {
+                MessageBox.Show("The end date cannot be earlier than the entered date");
+            }
+
         }
     }
 }

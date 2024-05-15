@@ -38,6 +38,7 @@ namespace InventoryManagement
 
         private void AssignmentEnddateTimePicker_ValueChanged(object sender, EventArgs e)
         {
+
             this.AssignmentEnddateTimePicker.CustomFormat = null;
 
         }
@@ -46,14 +47,19 @@ namespace InventoryManagement
         {
             
             int selectedAssignmentId = Convert.ToInt32(AssignmentIdcomboBox.SelectedItem);
-
             DateTime endDate;
-
             endDate = AssignmentEnddateTimePicker.Value.Date;
-            DB_Operations.UpdateAssignment(selectedAssignmentId, endDate);
+            if (DateInRangeOperations.IsAssignmentDateInRange(selectedAssignmentId, endDate))
+            {
+                DB_Operations.UpdateAssignment(selectedAssignmentId, endDate);
+            }
+            else
+            {
+                MessageBox.Show("The end date cannot be earlier than the entered date");
+            }
 
 
-            
+
         }
     }
 }

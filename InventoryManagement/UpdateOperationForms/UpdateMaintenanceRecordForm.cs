@@ -51,10 +51,16 @@ namespace InventoryManagement
             byte maintenanceStatus;
             bool isMaintenanceStatusParsed = byte.TryParse(MaintenanceStatustextBox.Text, out maintenanceStatus);
 
-                
-            if ((isMaintenanceStatusParsed || this.MaintenanceEndDate.HasValue))
+            if (isMaintenanceStatusParsed || this.MaintenanceEndDate.HasValue)
             {
-                DB_Operations.UpdateMaintenance(selectedMaintenanceId, maintenanceStatus, this.MaintenanceEndDate);
+                if (!this.MaintenanceEndDate.HasValue || DateInRangeOperations.IsMaintenanceDateInRange(selectedMaintenanceId, this.MaintenanceEndDate))
+                {
+                    DB_Operations.UpdateMaintenance(selectedMaintenanceId, maintenanceStatus, this.MaintenanceEndDate);
+                }
+                else
+                {
+                    MessageBox.Show("The end date cannot be earlier than the entered date");
+                }
             }
             else
             {

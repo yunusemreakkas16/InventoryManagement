@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -68,15 +69,25 @@ namespace InventoryManagement
                 date = MaintenancedateTimePicker.Value.Date;
                 endDate = MaintenanceEnddateTimePicker.Value.Date;
 
+
                 if (byte.TryParse(StatustextBox.Text, out status))
                 {
-                    DB_Operations.AddMaintenance(selectedItemId, status, date, endDate);
-                    
+                    if (DateInRangeOperations.IsDateInRange(date, endDate))
+                    {
+                        DB_Operations.AddMaintenance(selectedItemId, status, date, endDate);
+                    }
+                    else
+                    {
+                        MessageBox.Show("The end date cannot be earlier than the entered date");
+                    }
+
                 }
                 else
                 {
                     MessageBox.Show("Please enter a valid status value.");
                 }
+
+
 
             }
             else
