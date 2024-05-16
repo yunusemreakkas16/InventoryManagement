@@ -26,14 +26,14 @@ namespace InventoryManagement
 
         private void DeleteItemForm_Load(object sender, EventArgs e)
         {
-            var itemIds = ComboBoxData.GetItemsIds();
-            ItemIdcomboBox.DataSource = itemIds;
+            ItemIdcomboBox.DataSource = DB_Operations.ListItems().ToList();
+            ItemIdcomboBox.DisplayMember = "ItemIdItemName";
+            ItemIdcomboBox.ValueMember = "ItemId";
         }
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            int selectedItemId = Convert.ToInt32(ItemIdcomboBox.SelectedItem);
-            DB_Operations.DeleteItem(selectedItemId);
+            DB_Operations.DeleteItem((int)ItemIdcomboBox.SelectedValue);
         }
     }
 }

@@ -40,5 +40,10 @@ namespace InventoryManagement
         {
             get { return EnumTranslate.GetItemStatus(this.ItemStatus); }
         }
+        
+        public string ItemIdItemName
+        {
+            get { return $"{this.ItemId.ToString()} {this.ItemName}"; }
+        }
     }
 }
