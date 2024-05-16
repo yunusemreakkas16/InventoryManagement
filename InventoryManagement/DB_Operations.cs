@@ -103,24 +103,11 @@ namespace InventoryManagement
 
         //                                                                                      ***** Delete Operations *****
 
-        public static void DeletePersonnel(string name, string surname)
+        public static void DeletePersonnel(int personnelId)
         {
-            if(string.IsNullOrEmpty(name) && string.IsNullOrEmpty(surname)) { MessageBox.Show("Name and Surname cannot be empty"); return; }
-
-            // Check Personnels names and surnames before Delete
-
-            var DoesPersonnelExist = dbConnection.Query<string>("SELECT PersonnelName, PersonnelSurname FROM Personnel WHERE PersonnelName = @name AND PersonnelSurname = @surname", new {name, surname}).SingleOrDefault();
-
-            if (DoesPersonnelExist != null) 
-            { 
-                dbConnection.Execute("DELETE FROM Personnel WHERE PersonnelName = @PersonnelName AND PersonnelSurname = @PersonnelSurname", new { PersonnelName = name, PersonnelSurname = surname });
-                MessageBox.Show("Personnel Deleted");
-            }
-            else 
-            { 
-                MessageBox.Show("The personnel’s name and surname did not match");
-                return; 
-            }
+            if (personnelId == 0) { MessageBox.Show("Item ID can not be 0"); return; }
+            dbConnection.Execute("DELETE FROM Personnel WHERE PersonnelId = @personnelId", new { personnelId });
+            MessageBox.Show("Personnel Deleted");
         }
 
         public static void DeleteItem(int itemId)

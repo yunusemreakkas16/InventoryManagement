@@ -31,9 +31,7 @@
             this.BackButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.NamecomboBox = new System.Windows.Forms.ComboBox();
-            this.SurnamecomboBox = new System.Windows.Forms.ComboBox();
+            this.NameSurnamecomboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // BackButton
@@ -48,7 +46,7 @@
             // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(305, 240);
+            this.DeleteButton.Location = new System.Drawing.Point(305, 200);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(75, 25);
             this.DeleteButton.TabIndex = 1;
@@ -59,36 +57,19 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(310, 130);
+            this.label2.Location = new System.Drawing.Point(270, 130);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 13);
+            this.label2.Size = new System.Drawing.Size(152, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Personnel Name";
+            this.label2.Text = "Personnel Name And Surname";
             // 
-            // label3
+            // NameSurnamecomboBox
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(300, 180);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Personnel Surname";
-            // 
-            // NamecomboBox
-            // 
-            this.NamecomboBox.FormattingEnabled = true;
-            this.NamecomboBox.Location = new System.Drawing.Point(270, 150);
-            this.NamecomboBox.Name = "NamecomboBox";
-            this.NamecomboBox.Size = new System.Drawing.Size(150, 21);
-            this.NamecomboBox.TabIndex = 7;
-            // 
-            // SurnamecomboBox
-            // 
-            this.SurnamecomboBox.FormattingEnabled = true;
-            this.SurnamecomboBox.Location = new System.Drawing.Point(270, 200);
-            this.SurnamecomboBox.Name = "SurnamecomboBox";
-            this.SurnamecomboBox.Size = new System.Drawing.Size(150, 21);
-            this.SurnamecomboBox.TabIndex = 8;
+            this.NameSurnamecomboBox.FormattingEnabled = true;
+            this.NameSurnamecomboBox.Location = new System.Drawing.Point(270, 150);
+            this.NameSurnamecomboBox.Name = "NameSurnamecomboBox";
+            this.NameSurnamecomboBox.Size = new System.Drawing.Size(150, 21);
+            this.NameSurnamecomboBox.TabIndex = 7;
             // 
             // DeletePersonnelForm
             // 
@@ -96,9 +77,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(694, 361);
             this.ControlBox = false;
-            this.Controls.Add(this.SurnamecomboBox);
-            this.Controls.Add(this.NamecomboBox);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.NameSurnamecomboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.BackButton);
@@ -115,8 +94,6 @@
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox NamecomboBox;
-        private System.Windows.Forms.ComboBox SurnamecomboBox;
+        private System.Windows.Forms.ComboBox NameSurnamecomboBox;
     }
 }

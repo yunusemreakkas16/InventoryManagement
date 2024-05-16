@@ -14,6 +14,11 @@ namespace InventoryManagement
         public int PersonnelId { get; set; }
         public string PersonnelName { get; set; } //limit 50 characters!
         public string PersonnelSurname { get; set;} //limit 50 characters!
-        public string PersonnelDepartment { get; set;} //limit 50 characters!       
+        public string PersonnelDepartment { get; set;} //limit 50 characters!
+
+        public string NameAndSurname
+        {
+            get { return $"{this.PersonnelId} {this.PersonnelName} {PersonnelSurname}"; }
+        }
     }
 }

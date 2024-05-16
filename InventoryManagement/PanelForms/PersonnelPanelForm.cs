@@ -16,8 +16,41 @@ namespace InventoryManagement
         {
             InitializeComponent();
 
+            dataGridView1.AutoGenerateColumns = false;
+
+            // sets GridView manually to make columns
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "PersonnelId",
+                DataPropertyName = "PersonnelId",
+                HeaderText = "Personnel ID",
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "PersonnelName",
+                DataPropertyName = "PersonnelName",
+                HeaderText = "Personnel Name"
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "PersonnelSurname",
+                DataPropertyName = "PersonnelSurname",
+                HeaderText = "Personnel Surname"
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "Department",
+                DataPropertyName = "PersonnelDepartment",
+                HeaderText = "Department"
+            });
+
             dataGridView1.DataSource = DB_Operations.ListPersonnel();
         }
+   
 
         private void AddNewPersonnel_Click(object sender, EventArgs e)
         {

@@ -19,11 +19,9 @@ namespace InventoryManagement
         
         private void DeletePersonnelForm_Load(object sender, EventArgs e)
         {
-            var names = ComboBoxData.GetPersonnelNames();
-            NamecomboBox.DataSource = names;
-            
-            var surnames = ComboBoxData.GetPersonnelSurnames();
-            SurnamecomboBox.DataSource= surnames;
+            NameSurnamecomboBox.DataSource = DB_Operations.ListPersonnel().ToList();
+            NameSurnamecomboBox.DisplayMember = "NameAndSurname";
+            NameSurnamecomboBox.ValueMember = "PersonnelId";
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -33,14 +31,12 @@ namespace InventoryManagement
             this.Close();
         }
 
+
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            // Get the name and surname selected from the ComboBox
-            string selectedName = NamecomboBox.SelectedItem.ToString();
-            string selectedSurname = SurnamecomboBox.SelectedItem.ToString();
-
             // Delete the personnel using the selected name and surname
-            DB_Operations.DeletePersonnel(selectedName, selectedSurname);
+            DB_Operations.DeletePersonnel((int)NameSurnamecomboBox.SelectedValue);
         }
+
     }
 }
