@@ -19,10 +19,42 @@ namespace InventoryManagement
             // Executes Grid view when form opens
 
             dataGridView2.AutoGenerateColumns = false;
+            dataGridView1.AutoGenerateColumns = false;
 
             // sets GridView manually to make columns
 
-            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "PersonnelId",
+                DataPropertyName = "PersonnelId",
+                HeaderText = "Personnel ID",
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "PersonnelName",
+                DataPropertyName = "PersonnelName",
+                HeaderText = "Personnel Name"
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "PersonnelSurname",
+                DataPropertyName = "PersonnelSurname",
+                HeaderText = "Personnel Surname"
+            });
+
+            dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                Name = "Department",
+                DataPropertyName = "PersonnelDepartment",
+                HeaderText = "Department"
+            });
+
+            dataGridView1.DataSource = DB_Operations.ListPersonnel();
+        
+
+        dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "ItemId",
                 DataPropertyName = "ItemId",

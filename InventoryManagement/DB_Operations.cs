@@ -106,6 +106,15 @@ namespace InventoryManagement
         public static void DeletePersonnel(int personnelId)
         {
             if (personnelId == 0) { MessageBox.Show("Item ID can not be 0"); return; }
+
+            var isPersonnelAssigned = dbConnection.QuerySingleOrDefault("SELECT FK_PersonnelId FROM Assignment WHERE FK_PersonnelId = @personnelId", new {personnelId});
+
+            if (isPersonnelAssigned != null )
+            {
+                MessageBox.Show("This personnel has assignments. Please delete the assignments first");
+                return;
+            }
+
             dbConnection.Execute("DELETE FROM Personnel WHERE PersonnelId = @personnelId", new { personnelId });
             MessageBox.Show("Personnel Deleted");
         }
@@ -113,6 +122,21 @@ namespace InventoryManagement
         public static void DeleteItem(int itemId)
         {
             if(itemId == 0) { MessageBox.Show("Item ID can not be 0"); return; }
+
+            var isItemAssigned = dbConnection.QuerySingleOrDefault("SELECT FK_ItemId FROM Assignment WHERE FK_ItemId = @itemId", new {itemId});
+            if(isItemAssigned != null)
+            {
+                MessageBox.Show("This item has assignment. Please delete the assignment first");
+                return;
+            }
+
+            var isItemMaintaining = dbConnection.QuerySingleOrDefault("SELECT FK_ItemId FROM Maintenance WHERE FK_ItemId = @itemId ", new {itemId});
+            if(isItemMaintaining != null)
+            {
+                MessageBox.Show("This item is maintaing. Please delete the maintenance record first");
+                return;
+            }
+
             dbConnection.Execute("DELETE FROM Item WHERE ItemId = @ItemId", new { ItemId = itemId });
             MessageBox.Show("Item Deleted");
         }
