@@ -78,5 +78,13 @@ namespace InventoryManagement
             updatePersonnelForm.Show();
             this.Close();
         }
+
+        private void dataGridView1_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            var columnName = dataGridView1.Columns[e.ColumnIndex].Name;
+            var sortableColumn = "Department";
+            SortingFunctions.SortDataGridView(dataGridView1, columnName, SortingFunctions.PersonnelDepartmentSort, DB_Operations.ListPersonnel, sortableColumn);
+        }
+
     }
 }

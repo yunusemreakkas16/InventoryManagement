@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,5 +30,27 @@ namespace InventoryManagement
             items.Sort((a, b) => a.ItemType.CompareTo(b.ItemType));
             return items;
         }
+
+        public static void SortDataGridView(DataGridView dataGridView, string columnName, Func<IEnumerable> sortFunction, Func<IEnumerable> defaultFunction, string sortableColumn)
+        {
+            if (sortableColumn == columnName)
+            {
+                if (dataGridView.Columns[columnName].HeaderCell.SortGlyphDirection != SortOrder.Ascending)
+                {
+                    dataGridView.DataSource = null;
+                    dataGridView.Rows.Clear();
+                    dataGridView.DataSource = sortFunction();
+                    dataGridView.Columns[columnName].HeaderCell.SortGlyphDirection = SortOrder.Ascending;
+                }
+                else
+                {
+                    dataGridView.DataSource = null;
+                    dataGridView.Rows.Clear();
+                    dataGridView.DataSource = defaultFunction();
+                    dataGridView.Columns[columnName].HeaderCell.SortGlyphDirection = SortOrder.None;
+                }
+            }
+        }
+
     }
 }

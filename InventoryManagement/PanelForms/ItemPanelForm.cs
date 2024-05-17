@@ -77,5 +77,12 @@ namespace InventoryManagement
             updateItemForm.Show();
             this.Close();
         }
+
+        private void dataGridView1_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            var columnName = dataGridView1.Columns[e.ColumnIndex].Name;
+            var sortableColumn = "ItemType";
+            SortingFunctions.SortDataGridView(dataGridView1, columnName, SortingFunctions.ItemTypeSort, DB_Operations.ListItems, sortableColumn);
+        }
     }
 }

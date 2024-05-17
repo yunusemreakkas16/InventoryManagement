@@ -156,54 +156,22 @@ namespace InventoryManagement
         private void dataGridView1_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             var columnName = dataGridView1.Columns[e.ColumnIndex].Name;
-            if(columnName == "Department")
-            {
-                dataGridView1.DataSource = null;
-                dataGridView1.Rows.Clear();
-                dataGridView1.DataSource = SortingFunctions.PersonnelDepartmentSort();
-            }
-            else if (columnName == "PersonnelId")
-            {
-                dataGridView1.DataSource= null;
-                dataGridView1.Rows.Clear();
-                dataGridView1.DataSource = DB_Operations.ListPersonnel();
-            }
+            var sortableColumn = "Department";
+            SortingFunctions.SortDataGridView(dataGridView1,columnName,SortingFunctions.PersonnelDepartmentSort,DB_Operations.ListPersonnel,sortableColumn);
         }
 
         private void dataGridView2_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            var ColumnName = dataGridView2.Columns[e.ColumnIndex].Name;
-            if(ColumnName == "ItemType")
-            {
-                dataGridView2.DataSource = null;
-                dataGridView2.Rows.Clear();
-                dataGridView2.DataSource= SortingFunctions.ItemTypeSort();
-            }
-            else if(ColumnName == "ItemId")
-            {
-                dataGridView2.DataSource = null;
-                dataGridView2.Rows.Clear();
-                dataGridView2.DataSource = DB_Operations.ListItems();
-            }
+            var columnName = dataGridView2.Columns[e.ColumnIndex].Name;
+            var sortableColumn = "ItemType";
+            SortingFunctions.SortDataGridView(dataGridView2,columnName, SortingFunctions.ItemTypeSort, DB_Operations.ListItems,sortableColumn);
         }
 
         private void dataGridView3_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             var columnName = dataGridView3.Columns[e.ColumnIndex].Name;
-
-            if (columnName == "PersonnelId")
-            {
-                dataGridView3.DataSource = null;
-                dataGridView3.Rows.Clear();
-                dataGridView3.DataSource = SortingFunctions.AssignmentPersonnelIdSort();
-            }
-            else if(columnName == "AssignmentId")
-            {
-                dataGridView3.DataSource= null;
-                dataGridView3.Rows.Clear();
-                dataGridView3.DataSource = DB_Operations.ListAssignmentList();
-
-            }
+            var sortableColumn = "PersonnelId";
+            SortingFunctions.SortDataGridView(dataGridView3, columnName, SortingFunctions.AssignmentPersonnelIdSort, DB_Operations.ListAssignmentList,sortableColumn);
         }
 
 
