@@ -43,7 +43,7 @@ namespace InventoryManagement
         
         public string ItemIdItemName
         {
-            get { return $"{this.ItemId.ToString()} {this.ItemName}"; }
+            get { return $"{this.ItemId} {this.ItemName}"; }
         }
     }
 }

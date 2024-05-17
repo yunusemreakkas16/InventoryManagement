@@ -23,6 +23,7 @@ namespace InventoryManagement
 
             // sets GridView manually to make columns
 
+            #region
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "PersonnelId",
@@ -50,11 +51,11 @@ namespace InventoryManagement
                 DataPropertyName = "PersonnelDepartment",
                 HeaderText = "Department"
             });
-
             dataGridView1.DataSource = DB_Operations.ListPersonnel();
-        
+            #endregion
 
-        dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
+            #region
+            dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "ItemId",
                 DataPropertyName = "ItemId",
@@ -81,10 +82,11 @@ namespace InventoryManagement
                 DataPropertyName = "Status",
                 HeaderText = "Item Status"
             });
+            dataGridView2.DataSource = DB_Operations.ListItems();
+            #endregion
 
-
+            #region
             dataGridView3.AutoGenerateColumns = false;
-
             dataGridView3.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "AssignmentId",
@@ -119,10 +121,9 @@ namespace InventoryManagement
                 DataPropertyName = "FK_ItemId",
                 HeaderText = "Item ID"
             });
-
-            dataGridView2.DataSource = DB_Operations.ListItems();
-            dataGridView1.DataSource = DB_Operations.ListPersonnel();
             dataGridView3.DataSource = DB_Operations.ListAssignmentList();
+            #endregion
+
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -151,5 +152,60 @@ namespace InventoryManagement
             updateMaintenanceRecordPanel.Show();
             this.Close();
         }
+
+        private void dataGridView1_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            var columnName = dataGridView1.Columns[e.ColumnIndex].Name;
+            if(columnName == "Department")
+            {
+                dataGridView1.DataSource = null;
+                dataGridView1.Rows.Clear();
+                dataGridView1.DataSource = SortingFunctions.PersonnelDepartmentSort();
+            }
+            else if (columnName == "PersonnelId")
+            {
+                dataGridView1.DataSource= null;
+                dataGridView1.Rows.Clear();
+                dataGridView1.DataSource = DB_Operations.ListPersonnel();
+            }
+        }
+
+        private void dataGridView2_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            var ColumnName = dataGridView2.Columns[e.ColumnIndex].Name;
+            if(ColumnName == "ItemType")
+            {
+                dataGridView2.DataSource = null;
+                dataGridView2.Rows.Clear();
+                dataGridView2.DataSource= SortingFunctions.ItemTypeSort();
+            }
+            else if(ColumnName == "ItemId")
+            {
+                dataGridView2.DataSource = null;
+                dataGridView2.Rows.Clear();
+                dataGridView2.DataSource = DB_Operations.ListItems();
+            }
+        }
+
+        private void dataGridView3_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            var columnName = dataGridView3.Columns[e.ColumnIndex].Name;
+
+            if (columnName == "PersonnelId")
+            {
+                dataGridView3.DataSource = null;
+                dataGridView3.Rows.Clear();
+                dataGridView3.DataSource = SortingFunctions.AssignmentPersonnelIdSort();
+            }
+            else if(columnName == "AssignmentId")
+            {
+                dataGridView3.DataSource= null;
+                dataGridView3.Rows.Clear();
+                dataGridView3.DataSource = DB_Operations.ListAssignmentList();
+
+            }
+        }
+
+
     }
 }

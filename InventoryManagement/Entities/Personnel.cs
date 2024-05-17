@@ -18,7 +18,7 @@ namespace InventoryManagement
 
         public string NameAndSurname
         {
-            get { return $"{this.PersonnelId.ToString()} {this.PersonnelName} {PersonnelSurname}"; }
+            get { return $"{this.PersonnelId} {this.PersonnelName} {PersonnelSurname}"; }
         }
     }
 }
