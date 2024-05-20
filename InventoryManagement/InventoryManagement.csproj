@@ -138,6 +138,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SortingFunctions.cs" />
+    <Compile Include="TableCounts.cs" />
     <Compile Include="UpdateOperationForms\UpdateAssignmentRecordForm.cs">
       <SubType>Form</SubType>
     </Compile>

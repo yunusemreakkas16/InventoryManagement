@@ -34,6 +34,7 @@
             this.DeletePersonnel = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.PersonnelCountlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,12 +97,22 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Personnel";
             // 
+            // PersonnelCountlabel
+            // 
+            this.PersonnelCountlabel.AutoSize = true;
+            this.PersonnelCountlabel.Location = new System.Drawing.Point(600, 570);
+            this.PersonnelCountlabel.Name = "PersonnelCountlabel";
+            this.PersonnelCountlabel.Size = new System.Drawing.Size(85, 13);
+            this.PersonnelCountlabel.TabIndex = 6;
+            this.PersonnelCountlabel.Text = "PersonnelCount:";
+            // 
             // PersonnelPanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.PersonnelCountlabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.DeletePersonnel);
@@ -111,6 +122,7 @@
             this.Name = "PersonnelPanelForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Personnel Panel";
+            this.Load += new System.EventHandler(this.PersonnelPanelForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,5 +137,6 @@
         private System.Windows.Forms.Button DeletePersonnel;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label PersonnelCountlabel;
     }
 }

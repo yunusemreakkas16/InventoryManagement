@@ -34,6 +34,7 @@
             this.UpdateButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.ItemCountlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,12 +97,22 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Item";
             // 
+            // ItemCountlabel
+            // 
+            this.ItemCountlabel.AutoSize = true;
+            this.ItemCountlabel.Location = new System.Drawing.Point(615, 570);
+            this.ItemCountlabel.Name = "ItemCountlabel";
+            this.ItemCountlabel.Size = new System.Drawing.Size(29, 13);
+            this.ItemCountlabel.TabIndex = 6;
+            this.ItemCountlabel.Text = "label";
+            // 
             // ItemPanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.ItemCountlabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.UpdateButton);
@@ -111,6 +122,7 @@
             this.Name = "ItemPanelForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Item Panel";
+            this.Load += new System.EventHandler(this.ItemPanelForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,5 +137,6 @@
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label ItemCountlabel;
     }
 }

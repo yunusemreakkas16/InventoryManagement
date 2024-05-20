@@ -34,6 +34,9 @@
             this.UnAssigment = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
+            this.AssignmentCountlabel = new System.Windows.Forms.Label();
+            this.PersonnelCountlabel = new System.Windows.Forms.Label();
+            this.ItemCountlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -101,7 +104,7 @@
             // 
             // NewAssigmentButton
             // 
-            this.NewAssigmentButton.Location = new System.Drawing.Point(455, 520);
+            this.NewAssigmentButton.Location = new System.Drawing.Point(450, 520);
             this.NewAssigmentButton.Name = "NewAssigmentButton";
             this.NewAssigmentButton.Size = new System.Drawing.Size(120, 25);
             this.NewAssigmentButton.TabIndex = 6;
@@ -111,7 +114,7 @@
             // 
             // UnAssigment
             // 
-            this.UnAssigment.Location = new System.Drawing.Point(685, 520);
+            this.UnAssigment.Location = new System.Drawing.Point(690, 520);
             this.UnAssigment.Name = "UnAssigment";
             this.UnAssigment.Size = new System.Drawing.Size(120, 25);
             this.UnAssigment.TabIndex = 7;
@@ -121,7 +124,7 @@
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(570, 475);
+            this.UpdateButton.Location = new System.Drawing.Point(570, 520);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(120, 25);
             this.UpdateButton.TabIndex = 10;
@@ -139,6 +142,33 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
+            // AssignmentCountlabel
+            // 
+            this.AssignmentCountlabel.AutoSize = true;
+            this.AssignmentCountlabel.Location = new System.Drawing.Point(565, 470);
+            this.AssignmentCountlabel.Name = "AssignmentCountlabel";
+            this.AssignmentCountlabel.Size = new System.Drawing.Size(133, 13);
+            this.AssignmentCountlabel.TabIndex = 12;
+            this.AssignmentCountlabel.Text = "Assignment Record Count:";
+            // 
+            // PersonnelCountlabel
+            // 
+            this.PersonnelCountlabel.AutoSize = true;
+            this.PersonnelCountlabel.Location = new System.Drawing.Point(115, 470);
+            this.PersonnelCountlabel.Name = "PersonnelCountlabel";
+            this.PersonnelCountlabel.Size = new System.Drawing.Size(88, 13);
+            this.PersonnelCountlabel.TabIndex = 13;
+            this.PersonnelCountlabel.Text = "Personnel Count:";
+            // 
+            // ItemCountlabel
+            // 
+            this.ItemCountlabel.AutoSize = true;
+            this.ItemCountlabel.Location = new System.Drawing.Point(1075, 470);
+            this.ItemCountlabel.Name = "ItemCountlabel";
+            this.ItemCountlabel.Size = new System.Drawing.Size(61, 13);
+            this.ItemCountlabel.TabIndex = 14;
+            this.ItemCountlabel.Text = "Item Count:";
+            // 
             // AssignmentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -146,6 +176,9 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.ItemCountlabel);
+            this.Controls.Add(this.PersonnelCountlabel);
+            this.Controls.Add(this.AssignmentCountlabel);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.UnAssigment);
@@ -161,6 +194,7 @@
             this.Name = "AssignmentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Assigment Panel";
+            this.Load += new System.EventHandler(this.AssignmentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
@@ -181,5 +215,8 @@
         private System.Windows.Forms.Button UnAssigment;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.Label AssignmentCountlabel;
+        private System.Windows.Forms.Label PersonnelCountlabel;
+        private System.Windows.Forms.Label ItemCountlabel;
     }
 }

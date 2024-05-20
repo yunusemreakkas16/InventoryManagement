@@ -46,7 +46,7 @@ namespace InventoryManagement
                 HeaderText ="Item Status"
             });
 
-            dataGridView1.DataSource = DB_Operations.ListItems();
+            dataGridView1.DataSource = DB_Operations.ListItem();
             
             dataGridView1.Refresh();
         }
@@ -82,7 +82,12 @@ namespace InventoryManagement
         {
             var columnName = dataGridView1.Columns[e.ColumnIndex].Name;
             var sortableColumn = "ItemType";
-            SortingFunctions.SortDataGridView(dataGridView1, columnName, SortingFunctions.ItemTypeSort, DB_Operations.ListItems, sortableColumn);
+            SortingFunctions.SortDataGridView(dataGridView1, columnName, SortingFunctions.ItemTypeSort, DB_Operations.ListItem, sortableColumn);
+        }
+
+        private void ItemPanelForm_Load(object sender, EventArgs e)
+        {
+            ItemCountlabel.Text = "Item Count: " + TableCounts.GetItemCount().ToString();
         }
     }
 }

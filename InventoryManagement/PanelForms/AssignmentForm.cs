@@ -82,7 +82,7 @@ namespace InventoryManagement
                 DataPropertyName = "Status",
                 HeaderText = "Item Status"
             });
-            dataGridView2.DataSource = DB_Operations.ListItems();
+            dataGridView2.DataSource = DB_Operations.ListItem();
             #endregion
 
             #region
@@ -164,7 +164,7 @@ namespace InventoryManagement
         {
             var columnName = dataGridView2.Columns[e.ColumnIndex].Name;
             var sortableColumn = "ItemType";
-            SortingFunctions.SortDataGridView(dataGridView2,columnName, SortingFunctions.ItemTypeSort, DB_Operations.ListItems,sortableColumn);
+            SortingFunctions.SortDataGridView(dataGridView2,columnName, SortingFunctions.ItemTypeSort, DB_Operations.ListItem,sortableColumn);
         }
 
         private void dataGridView3_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -174,6 +174,11 @@ namespace InventoryManagement
             SortingFunctions.SortDataGridView(dataGridView3, columnName, SortingFunctions.AssignmentPersonnelIdSort, DB_Operations.ListAssignmentList,sortableColumn);
         }
 
-
+        private void AssignmentForm_Load(object sender, EventArgs e)
+        {
+            AssignmentCountlabel.Text = "Assignment Record Count: " + TableCounts.GetAssignmentRecordCount();
+            ItemCountlabel.Text = "Item Record: " + TableCounts.GetItemCount();
+            PersonnelCountlabel.Text = "Personnel Count: " + TableCounts.GetPersonnelCount();
+        }
     }
 }

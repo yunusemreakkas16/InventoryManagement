@@ -26,7 +26,7 @@ namespace InventoryManagement
 
         public static List<Item> ItemTypeSort()
         {
-            List<Item> items = DB_Operations.ListItems();
+            List<Item> items = DB_Operations.ListItem();
             items.Sort((a, b) => a.ItemType.CompareTo(b.ItemType));
             return items;
         }

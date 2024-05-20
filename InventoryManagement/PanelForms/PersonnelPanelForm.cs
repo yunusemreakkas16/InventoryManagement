@@ -86,5 +86,9 @@ namespace InventoryManagement
             SortingFunctions.SortDataGridView(dataGridView1, columnName, SortingFunctions.PersonnelDepartmentSort, DB_Operations.ListPersonnel, sortableColumn);
         }
 
+        private void PersonnelPanelForm_Load(object sender, EventArgs e)
+        {
+            PersonnelCountlabel.Text = "Personnel Count : " + TableCounts.GetPersonnelCount();
+        }
     }
 }

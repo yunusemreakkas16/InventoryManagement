@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\sortingfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\sortingfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\panelforms\\assignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\panelforms\\assignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\panelforms\\assignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\panelforms\\personnelpanelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\panelforms\\personnelpanelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\panelforms\\assignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\panelforms\\assignmentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\panelforms\\itempanelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\panelforms\\itempanelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\tablecounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\tablecounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\db_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -44,7 +40,7 @@
         },
         {
           "DockedWidth": 330,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -52,71 +48,58 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonnelPanelForm.cs",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\PanelForms\\PersonnelPanelForm.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\PanelForms\\PersonnelPanelForm.cs",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\PanelForms\\PersonnelPanelForm.cs",
-              "RelativeToolTip": "InventoryManagement\\PanelForms\\PersonnelPanelForm.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAA5wFcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T13:26:41.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ItemPanelForm.cs",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\PanelForms\\ItemPanelForm.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\PanelForms\\ItemPanelForm.cs",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\PanelForms\\ItemPanelForm.cs",
-              "RelativeToolTip": "InventoryManagement\\PanelForms\\ItemPanelForm.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAhwFMAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T11:36:29.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "AssignmentForm.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\PanelForms\\AssignmentForm.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\PanelForms\\AssignmentForm.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\PanelForms\\AssignmentForm.cs",
               "RelativeToolTip": "InventoryManagement\\PanelForms\\AssignmentForm.cs",
-              "ViewState": "AQIAAIgAAAAAAAAAAAAuwK0AAACkAAAA",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAuwLQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T06:42:45.827Z",
+              "WhenOpened": "2024-05-20T09:18:20.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SortingFunctions.cs",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\SortingFunctions.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\SortingFunctions.cs",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\SortingFunctions.cs",
-              "RelativeToolTip": "InventoryManagement\\SortingFunctions.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAIwDMAAAANAAAA",
+              "DocumentIndex": 1,
+              "Title": "AssignmentForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\PanelForms\\AssignmentForm.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\PanelForms\\AssignmentForm.cs",
+              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\PanelForms\\AssignmentForm.cs [Design]",
+              "RelativeToolTip": "InventoryManagement\\PanelForms\\AssignmentForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T11:25:52.52Z",
+              "WhenOpened": "2024-05-20T09:12:26.834Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TableCounts.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\TableCounts.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\TableCounts.cs",
+              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\TableCounts.cs",
+              "RelativeToolTip": "InventoryManagement\\TableCounts.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-20T07:25:10.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "DB_Operations.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\DB_Operations.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DB_Operations.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\DB_Operations.cs",
               "RelativeToolTip": "InventoryManagement\\DB_Operations.cs",
-              "ViewState": "AQIAAF4AAAAAAAAAAAAYwI4AAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACIAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T12:04:13.245Z"
+              "WhenOpened": "2024-04-30T12:04:13.245Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\Program.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Program.cs",

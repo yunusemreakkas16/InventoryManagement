@@ -39,7 +39,7 @@ namespace InventoryManagement
 
         public static List<int> GetItemsIds()
         {
-            return DB_Operations.ListItems().Select(i => i.ItemId).ToList();
+            return DB_Operations.ListItem().Select(i => i.ItemId).ToList();
         }
 
         public static List<string> GetUnassignedItemNames()

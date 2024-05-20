@@ -36,7 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.MaintenanceCountlabel = new System.Windows.Forms.Label();
+            this.IteCountlabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -61,7 +62,7 @@
             // 
             // UpdateButton
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(760, 520);
+            this.UpdateButton.Location = new System.Drawing.Point(760, 565);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(150, 25);
             this.UpdateButton.TabIndex = 3;
@@ -101,7 +102,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(757, 70);
+            this.label2.Location = new System.Drawing.Point(760, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 13);
             this.label2.TabIndex = 7;
@@ -117,14 +118,23 @@
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // button1
+            // MaintenanceCountlabel
             // 
-            this.button1.Location = new System.Drawing.Point(150, 520);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Refresh Items";
-            this.button1.UseVisualStyleBackColor = true;
+            this.MaintenanceCountlabel.AutoSize = true;
+            this.MaintenanceCountlabel.Location = new System.Drawing.Point(760, 510);
+            this.MaintenanceCountlabel.Name = "MaintenanceCountlabel";
+            this.MaintenanceCountlabel.Size = new System.Drawing.Size(141, 13);
+            this.MaintenanceCountlabel.TabIndex = 9;
+            this.MaintenanceCountlabel.Text = "Maintenance Record Count:";
+            // 
+            // IteCountlabel
+            // 
+            this.IteCountlabel.AutoSize = true;
+            this.IteCountlabel.Location = new System.Drawing.Point(155, 510);
+            this.IteCountlabel.Name = "IteCountlabel";
+            this.IteCountlabel.Size = new System.Drawing.Size(61, 13);
+            this.IteCountlabel.TabIndex = 10;
+            this.IteCountlabel.Text = "Item Count:";
             // 
             // MaintenanceForm
             // 
@@ -132,19 +142,21 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.ControlBox = false;
+            this.Controls.Add(this.IteCountlabel);
+            this.Controls.Add(this.MaintenanceCountlabel);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.RemoveServiceRecordButton);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.UpdateButton);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.MaximizeBox = false;
             this.Name = "MaintenanceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Maintenance Panel";
+            this.Load += new System.EventHandler(this.MaintenanceForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
@@ -162,6 +174,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BackButton;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label MaintenanceCountlabel;
+        private System.Windows.Forms.Label IteCountlabel;
     }
 }

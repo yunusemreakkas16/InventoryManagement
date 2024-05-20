@@ -87,13 +87,13 @@ namespace InventoryManagement
             });
 
             dataGridView1.DataSource = DB_Operations.ListMaintenanceList();    // Shows data when Maintenance Panel is opened
-            dataGridView2.DataSource = DB_Operations.ListItems();              // Shows data when Maintenance Panel is opened
+            dataGridView2.DataSource = DB_Operations.ListItem();              // Shows data when Maintenance Panel is opened
         }
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            MainPanelForm.Instance.Show();                  //Return to Main Interface                  
-            this.Close();                                   //Closes  a Form
+            MainPanelForm.Instance.Show();                                  // Return to Main Interface                  
+            this.Close();                                                  // Closes  a Form
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -115,6 +115,12 @@ namespace InventoryManagement
             UpdateMaintenanceRecordForm updateMaintenanceRecordForm = new UpdateMaintenanceRecordForm();
             updateMaintenanceRecordForm.Show();
             this.Close();
+        }
+
+        private void MaintenanceForm_Load(object sender, EventArgs e)
+        {
+            MaintenanceCountlabel.Text = "Maintenance Record Count: " + TableCounts.GetMaintenanceListCount();
+            IteCountlabel.Text = "Item Count: " + TableCounts.GetItemCount();
         }
     }
 }

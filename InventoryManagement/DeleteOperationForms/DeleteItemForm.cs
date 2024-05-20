@@ -26,7 +26,7 @@ namespace InventoryManagement
 
         private void DeleteItemForm_Load(object sender, EventArgs e)
         {
-            ItemIdcomboBox.DataSource = DB_Operations.ListItems().ToList();
+            ItemIdcomboBox.DataSource = DB_Operations.ListItem().ToList();
             ItemIdcomboBox.DisplayMember = "ItemIdItemName";
             ItemIdcomboBox.ValueMember = "ItemId";
         }

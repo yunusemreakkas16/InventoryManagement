@@ -29,7 +29,7 @@ namespace InventoryManagement
             var personnels = dbConnection.Query<Personnel>("SELECT* FROM Personnel");
             return personnels.ToList();
         }
-        public static List<Item> ListItems()
+        public static List<Item> ListItem()
         {
             var items = dbConnection.Query<Item>("SELECT * FROM Item");
             return items.ToList();
