@@ -56,3 +56,4 @@ C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\Inve
 C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UpdateMaintenanceRecordForm.resources
 C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UpdateItemForm.resources
 C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.UpdatePersonnelForm.resources
+C:\Users\murat\OneDrive\Belgeler\Unreal Projects\GitHub\InventoryManagement\InventoryManagement\obj\Debug\InventoryManagement.GetAuthenticateForm.resources

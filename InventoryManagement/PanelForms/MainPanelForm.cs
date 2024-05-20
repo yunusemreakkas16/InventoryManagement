@@ -13,7 +13,7 @@ namespace InventoryManagement
     public partial class MainPanelForm : Form
     {
         
-        public static MainPanelForm Instance { get; private set; }              //Saved Form instance
+        public static MainPanelForm Instance { get; private set; }                      //Saved Form instance
         public MainPanelForm()
         {
             InitializeComponent();
@@ -24,8 +24,8 @@ namespace InventoryManagement
         private void button1_Click(object sender, EventArgs e)
         {
             AssignmentForm AssignmentPanel = new AssignmentForm();                      // To create new form
-            this.Hide();                                            // To hide current form
-            AssignmentPanel.Show();                                 // Show new form
+            this.Hide();                                                                // To hide current form
+            AssignmentPanel.Show();                                                     // Show new form
         }
 
         private void MaintenanceButton_Click(object sender, EventArgs e)
@@ -47,6 +47,13 @@ namespace InventoryManagement
             ItemPanelForm ItemPanel = new ItemPanelForm();
             this.Hide();
             ItemPanel.Show();
+        }
+
+        private void GetAuthenticatebutton_Click(object sender, EventArgs e)
+        {
+            GetAuthenticateForm getAuthenticateForm = new GetAuthenticateForm();
+            getAuthenticateForm.Show();
+            this.Hide();
         }
     }
 }

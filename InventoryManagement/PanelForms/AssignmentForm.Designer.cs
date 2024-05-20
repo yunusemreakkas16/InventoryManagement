@@ -31,7 +31,7 @@
             this.ItemLabel = new System.Windows.Forms.Label();
             this.AssigmentLabel = new System.Windows.Forms.Label();
             this.NewAssigmentButton = new System.Windows.Forms.Button();
-            this.UnAssigment = new System.Windows.Forms.Button();
+            this.UnAssigmentButton = new System.Windows.Forms.Button();
             this.UpdateButton = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
             this.AssignmentCountlabel = new System.Windows.Forms.Label();
@@ -112,15 +112,15 @@
             this.NewAssigmentButton.UseVisualStyleBackColor = true;
             this.NewAssigmentButton.Click += new System.EventHandler(this.NewAssigmentButton_Click);
             // 
-            // UnAssigment
+            // UnAssigmentButton
             // 
-            this.UnAssigment.Location = new System.Drawing.Point(690, 520);
-            this.UnAssigment.Name = "UnAssigment";
-            this.UnAssigment.Size = new System.Drawing.Size(120, 25);
-            this.UnAssigment.TabIndex = 7;
-            this.UnAssigment.Text = "Delete Assigment";
-            this.UnAssigment.UseVisualStyleBackColor = true;
-            this.UnAssigment.Click += new System.EventHandler(this.UnAssigment_Click);
+            this.UnAssigmentButton.Location = new System.Drawing.Point(690, 520);
+            this.UnAssigmentButton.Name = "UnAssigmentButton";
+            this.UnAssigmentButton.Size = new System.Drawing.Size(120, 25);
+            this.UnAssigmentButton.TabIndex = 7;
+            this.UnAssigmentButton.Text = "Delete Assigment";
+            this.UnAssigmentButton.UseVisualStyleBackColor = true;
+            this.UnAssigmentButton.Click += new System.EventHandler(this.UnAssigmentButton_Click);
             // 
             // UpdateButton
             // 
@@ -181,7 +181,7 @@
             this.Controls.Add(this.AssignmentCountlabel);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.UpdateButton);
-            this.Controls.Add(this.UnAssigment);
+            this.Controls.Add(this.UnAssigmentButton);
             this.Controls.Add(this.NewAssigmentButton);
             this.Controls.Add(this.AssigmentLabel);
             this.Controls.Add(this.dataGridView3);
@@ -212,7 +212,7 @@
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label AssigmentLabel;
         private System.Windows.Forms.Button NewAssigmentButton;
-        private System.Windows.Forms.Button UnAssigment;
+        private System.Windows.Forms.Button UnAssigmentButton;
         private System.Windows.Forms.Button UpdateButton;
         private System.Windows.Forms.Button BackButton;
         private System.Windows.Forms.Label AssignmentCountlabel;

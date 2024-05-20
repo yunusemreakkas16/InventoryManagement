@@ -7,23 +7,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static InventoryManagement.Authentication;
 
 namespace InventoryManagement
 {
     public partial class AssignmentForm : Form
     {
+        private UserRole currentUserRole = Authentication.CurrentUserRole;
         public AssignmentForm()
         {
             InitializeComponent();
-
-            // Executes Grid view when form opens
-
-            dataGridView2.AutoGenerateColumns = false;
-            dataGridView1.AutoGenerateColumns = false;
+            ConfigureButtonsBasedOnUserRole();
 
             // sets GridView manually to make columns
 
             #region
+            dataGridView1.AutoGenerateColumns = false;
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "PersonnelId",
@@ -55,6 +54,7 @@ namespace InventoryManagement
             #endregion
 
             #region
+            dataGridView2.AutoGenerateColumns = false;
             dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "ItemId",
@@ -123,7 +123,6 @@ namespace InventoryManagement
             });
             dataGridView3.DataSource = DB_Operations.ListAssignmentList();
             #endregion
-
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -139,7 +138,7 @@ namespace InventoryManagement
             this.Close();
         }
 
-        private void UnAssigment_Click(object sender, EventArgs e)
+        private void UnAssigmentButton_Click(object sender, EventArgs e)
         {
             DeleteAssignmentForm deleteMaintenanceRecordPanel = new DeleteAssignmentForm();
             deleteMaintenanceRecordPanel.Show();
@@ -179,6 +178,13 @@ namespace InventoryManagement
             AssignmentCountlabel.Text = "Assignment Record Count: " + TableCounts.GetAssignmentRecordCount();
             ItemCountlabel.Text = "Item Record: " + TableCounts.GetItemCount();
             PersonnelCountlabel.Text = "Personnel Count: " + TableCounts.GetPersonnelCount();
+        }
+
+        private void ConfigureButtonsBasedOnUserRole()
+        {                                                                                                           // Sets Buttons visibility based on Roles
+            NewAssigmentButton.Visible = (currentUserRole == UserRole.Admin);
+            UnAssigmentButton.Visible = (currentUserRole == UserRole.Admin);
+            UpdateButton.Visible = (currentUserRole == UserRole.Admin || currentUserRole == UserRole.Moderator);
         }
     }
 }

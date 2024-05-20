@@ -24,12 +24,11 @@
 
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.MaintenanceButton = new System.Windows.Forms.Button();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.AssigmentButton = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.GetAuthenticatebutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // MaintenanceButton
@@ -42,11 +41,6 @@
             this.MaintenanceButton.Text = "Maintenance";
             this.MaintenanceButton.UseVisualStyleBackColor = false;
             this.MaintenanceButton.Click += new System.EventHandler(this.MaintenanceButton_Click);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // AssigmentButton
             // 
@@ -79,18 +73,29 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // GetAuthenticatebutton
+            // 
+            this.GetAuthenticatebutton.Location = new System.Drawing.Point(1132, 12);
+            this.GetAuthenticatebutton.Name = "GetAuthenticatebutton";
+            this.GetAuthenticatebutton.Size = new System.Drawing.Size(120, 25);
+            this.GetAuthenticatebutton.TabIndex = 4;
+            this.GetAuthenticatebutton.Text = "Get Authenticate";
+            this.GetAuthenticatebutton.UseVisualStyleBackColor = true;
+            this.GetAuthenticatebutton.Click += new System.EventHandler(this.GetAuthenticatebutton_Click);
+            // 
+            // MainPanelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.GetAuthenticatebutton);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.MaintenanceButton);
             this.Controls.Add(this.AssigmentButton);
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "MainPanelForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventory Management";
             this.ResumeLayout(false);
@@ -99,10 +104,10 @@
 
         #endregion
         private System.Windows.Forms.Button MaintenanceButton;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Button AssigmentButton;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button GetAuthenticatebutton;
     }
 }
 

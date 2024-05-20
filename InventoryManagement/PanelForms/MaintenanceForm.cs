@@ -7,19 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static InventoryManagement.Authentication;
 
 namespace InventoryManagement
 {
     public partial class MaintenanceForm : Form
     {
+        private UserRole currentUserRole = Authentication.CurrentUserRole;
         public MaintenanceForm()
         {
             InitializeComponent();
+            ConfigureButtonsBasedOnUserRole();
 
-            dataGridView2.AutoGenerateColumns = false;
 
             // sets GridView manually to make columns
 
+            #region
+            dataGridView2.AutoGenerateColumns = false;
             dataGridView2.Columns.Add(new DataGridViewTextBoxColumn
             {
                 Name = "ItemId",
@@ -47,9 +51,11 @@ namespace InventoryManagement
                 DataPropertyName = "Status",
                 HeaderText = "Item Status"
             });
+            dataGridView2.DataSource = DB_Operations.ListItem();              // Shows data when Maintenance Panel is opened
 
+            #endregion
 
-
+            #region
             dataGridView1.AutoGenerateColumns = false;
 
             dataGridView1.Columns.Add(new DataGridViewTextBoxColumn
@@ -87,7 +93,7 @@ namespace InventoryManagement
             });
 
             dataGridView1.DataSource = DB_Operations.ListMaintenanceList();    // Shows data when Maintenance Panel is opened
-            dataGridView2.DataSource = DB_Operations.ListItem();              // Shows data when Maintenance Panel is opened
+            #endregion
         }
 
         private void BackButton_Click(object sender, EventArgs e)
@@ -96,7 +102,7 @@ namespace InventoryManagement
             this.Close();                                                  // Closes  a Form
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void AddNewServiceRecordButton_Click(object sender, EventArgs e)
         {
             AddNewMaintenanceRecordForm addNewMaintenanceRecordForm = new AddNewMaintenanceRecordForm();
             addNewMaintenanceRecordForm.Show();
@@ -121,6 +127,12 @@ namespace InventoryManagement
         {
             MaintenanceCountlabel.Text = "Maintenance Record Count: " + TableCounts.GetMaintenanceListCount();
             IteCountlabel.Text = "Item Count: " + TableCounts.GetItemCount();
+        }
+        private void ConfigureButtonsBasedOnUserRole()
+        {                                                                                                           // Sets Buttons visibility based on Roles
+            AddNewServiceRecordbutton.Visible = (currentUserRole == UserRole.Admin);
+            RemoveServiceRecordButton.Visible = (currentUserRole == UserRole.Admin);
+            UpdateButton.Visible = (currentUserRole == UserRole.Admin || currentUserRole == UserRole.Moderator);
         }
     }
 }

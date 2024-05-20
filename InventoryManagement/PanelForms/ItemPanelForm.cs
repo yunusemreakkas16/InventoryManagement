@@ -7,15 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static InventoryManagement.Authentication;
 
 namespace InventoryManagement
 {
     public partial class ItemPanelForm : Form
     {
+        private UserRole currentUserRole = Authentication.CurrentUserRole;
         public ItemPanelForm()
         {
             InitializeComponent();
-
+            ConfigureButtonsBasedOnUserRole();
             dataGridView1.AutoGenerateColumns = false;
 
             // sets GridView manually to make columns
@@ -88,6 +90,13 @@ namespace InventoryManagement
         private void ItemPanelForm_Load(object sender, EventArgs e)
         {
             ItemCountlabel.Text = "Item Count: " + TableCounts.GetItemCount().ToString();
+        }
+
+        private void ConfigureButtonsBasedOnUserRole()
+        {                                                                                                           // Sets Buttons visibility based on Roles
+            AddNewItem.Visible = (currentUserRole == UserRole.Admin);
+            DeleteButton.Visible = (currentUserRole == UserRole.Admin);
+            UpdateButton.Visible = (currentUserRole == UserRole.Admin || currentUserRole == UserRole.Moderator);
         }
     }
 }

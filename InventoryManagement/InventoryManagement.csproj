@@ -73,6 +73,7 @@
     <Compile Include="AddOperationForms\AddNewPersonnelForm.Designer.cs">
       <DependentUpon>AddNewPersonnelForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Authentication.cs" />
     <Compile Include="ComboBoxData.cs" />
     <Compile Include="DateInRangeOperations.cs" />
     <Compile Include="DeleteOperationForms\DeleteAssignmentForm.cs">
@@ -103,6 +104,12 @@
     <Compile Include="Entities\Item.cs" />
     <Compile Include="DB_Operations.cs" />
     <Compile Include="EnumTranslate.cs" />
+    <Compile Include="PanelForms\GetAuthenticateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PanelForms\GetAuthenticateForm.Designer.cs">
+      <DependentUpon>GetAuthenticateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PanelForms\MainPanelForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeleteOperationForms\DeletePersonnelForm.resx">
       <DependentUpon>DeletePersonnelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PanelForms\GetAuthenticateForm.resx">
+      <DependentUpon>GetAuthenticateForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PanelForms\MainPanelForm.resx">
       <DependentUpon>MainPanelForm.cs</DependentUpon>
