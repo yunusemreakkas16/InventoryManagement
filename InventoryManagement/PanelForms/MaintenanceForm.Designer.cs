@@ -134,6 +134,7 @@
             this.AddNewServiceRecordbutton.TabIndex = 11;
             this.AddNewServiceRecordbutton.Text = "Add New Service Record";
             this.AddNewServiceRecordbutton.UseVisualStyleBackColor = true;
+            this.AddNewServiceRecordbutton.Click += new System.EventHandler(this.AddNewServiceRecordbutton_Click_1);
             // 
             // MaintenanceForm
             // 

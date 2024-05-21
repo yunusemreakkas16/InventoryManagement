@@ -26,6 +26,8 @@ namespace InventoryManagement
                 var UserName = UserNametextBox.Text;
                 var Password = PasswordtextBox.Text;
                 Authentication.AuthenticateUser(UserName, Password);
+                MainPanelForm.Instance.Show();
+                this.Close();
             }
             else
             {

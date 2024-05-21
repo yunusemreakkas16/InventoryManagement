@@ -31,8 +31,12 @@ namespace InventoryManagement
             // Check textboxes are empty or null
             if (!string.IsNullOrWhiteSpace(PersonnelNametextBox.Text) && !string.IsNullOrWhiteSpace(PersonnelSurnametextBox.Text) && !string.IsNullOrWhiteSpace(PersonnelDepartmenttextBox.Text))
             {
-                DB_Operations.AddPersonnel(PersonnelNametextBox.Text, PersonnelSurnametextBox.Text, PersonnelDepartmenttextBox.Text);
-                MessageBox.Show("New Personnel Added.");
+                if(DB_Operations.AddPersonnel(PersonnelNametextBox.Text, PersonnelSurnametextBox.Text, PersonnelDepartmenttextBox.Text))
+                {
+                    PersonnelPanelForm personnelPanelForm = new PersonnelPanelForm();
+                    personnelPanelForm.Show();
+                    this.Close();
+                }
             }
             else
             {

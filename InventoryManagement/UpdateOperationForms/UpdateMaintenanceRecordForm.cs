@@ -55,7 +55,12 @@ namespace InventoryManagement
             {
                 if (!this.MaintenanceEndDate.HasValue || DateInRangeOperations.IsMaintenanceDateInRange(selectedMaintenanceId, this.MaintenanceEndDate))
                 {
-                    DB_Operations.UpdateMaintenance(selectedMaintenanceId, maintenanceStatus, this.MaintenanceEndDate);
+                    if(DB_Operations.UpdateMaintenance(selectedMaintenanceId, maintenanceStatus, this.MaintenanceEndDate))
+                    {
+                        MaintenanceForm maintenanceForm = new MaintenanceForm();
+                        maintenanceForm.Show();
+                        this.Close();
+                    }
                 }
                 else
                 {

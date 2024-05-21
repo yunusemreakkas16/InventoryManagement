@@ -33,8 +33,12 @@ namespace InventoryManagement
                 byte itemStatus;
                 if (byte.TryParse(ItemTypetextBox.Text, out itemType) && byte.TryParse(ItemStatustextBox.Text, out itemStatus))
                 {
-                    DB_Operations.AddItem(ItemNametextBox.Text, itemType, itemStatus);
-                    MessageBox.Show("New Item Added.");
+                    if(DB_Operations.AddItem(ItemNametextBox.Text, itemType, itemStatus))
+                    {
+                        ItemPanelForm itemPanelForm = new ItemPanelForm();
+                        itemPanelForm.Show();
+                        this.Close();
+                    }
                 }
                 else
                 {

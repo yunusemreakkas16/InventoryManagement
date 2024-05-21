@@ -33,7 +33,12 @@ namespace InventoryManagement
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            DB_Operations.DeleteItem((int)ItemIdcomboBox.SelectedValue);
+            if (DB_Operations.DeleteItem((int)ItemIdcomboBox.SelectedValue)) 
+            {
+                ItemPanelForm itemPanelForm = new ItemPanelForm();
+                itemPanelForm.Show();
+                this.Close();
+            }
         }
     }
 }

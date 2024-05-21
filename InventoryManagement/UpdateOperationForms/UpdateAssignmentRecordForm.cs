@@ -51,7 +51,12 @@ namespace InventoryManagement
             endDate = AssignmentEnddateTimePicker.Value.Date;
             if (DateInRangeOperations.IsAssignmentDateInRange(selectedAssignmentId, endDate))
             {
-                DB_Operations.UpdateAssignment(selectedAssignmentId, endDate);
+                if(DB_Operations.UpdateAssignment(selectedAssignmentId, endDate))
+                {
+                    AssignmentForm assignmentForm = new AssignmentForm();
+                    assignmentForm.Show();
+                    this.Close();
+                }
             }
             else
             {

@@ -33,7 +33,12 @@ namespace InventoryManagement
         private void Delete_Click(object sender, EventArgs e)
         {
             int selectedAssignmentId = Convert.ToInt32(AssignmentIdcomboBox.SelectedItem);
-            DB_Operations.DeleteAssignment(selectedAssignmentId);
+            if(DB_Operations.DeleteAssignment(selectedAssignmentId)) 
+            {
+                AssignmentForm assignmentForm = new AssignmentForm();
+                assignmentForm.Show();
+                this.Close();
+            }
         }
     }
 }

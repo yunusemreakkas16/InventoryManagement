@@ -68,7 +68,12 @@ namespace InventoryManagement
 
             if (DateInRangeOperations.IsDateInRange(assignmentDate, assignmentEndDate))
             {
-                DB_Operations.AddAssignment(selectedName, selectedSurname, selectedItem, assignmentDate, assignmentEndDate);
+                if(DB_Operations.AddAssignment(selectedName, selectedSurname, selectedItem, assignmentDate, assignmentEndDate))
+                {
+                    AssignmentForm assignmentForm = new AssignmentForm();
+                    assignmentForm.Show();
+                    this.Close();
+                }
             }
             else
             {

@@ -39,7 +39,12 @@ namespace InventoryManagement
                 byte itemStatus;
                 if(byte.TryParse(ItemStatustextBox.Text, out itemStatus))
                 {
-                    DB_Operations.UpdateItem(selectedItemId, itemStatus);
+                    if(DB_Operations.UpdateItem(selectedItemId, itemStatus))
+                    {
+                        ItemPanelForm itemPanelForm = new ItemPanelForm();
+                        itemPanelForm.Show();
+                        this.Close();
+                    }
                 }
                 else
                 {

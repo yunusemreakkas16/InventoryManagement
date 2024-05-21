@@ -32,7 +32,12 @@ namespace InventoryManagement
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             int selectedId = Convert.ToInt32(maintenanceIdscomboBox.SelectedItem);
-            DB_Operations.DeleteMaintenance(selectedId);
+            if(DB_Operations.DeleteMaintenance(selectedId))
+            {
+                MaintenanceForm maintenanceForm = new MaintenanceForm();
+                maintenanceForm.Show();
+                this.Close();
+            }
         }
 
 

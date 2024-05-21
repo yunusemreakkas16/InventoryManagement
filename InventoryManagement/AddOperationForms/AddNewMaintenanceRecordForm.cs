@@ -74,7 +74,12 @@ namespace InventoryManagement
                 {
                     if (DateInRangeOperations.IsDateInRange(date, endDate))
                     {
-                        DB_Operations.AddMaintenance(selectedItemId, status, date, endDate);
+                        if(DB_Operations.AddMaintenance(selectedItemId, status, date, endDate))
+                        {
+                            MaintenanceForm maintenanceForm = new MaintenanceForm();
+                            maintenanceForm.Show();
+                            this.Close();
+                        }
                     }
                     else
                     {

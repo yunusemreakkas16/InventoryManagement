@@ -102,7 +102,7 @@ namespace InventoryManagement
             this.Close();                                                  // Closes  a Form
         }
 
-        private void AddNewServiceRecordButton_Click(object sender, EventArgs e)
+        private void AddNewServiceRecordbutton_Click_1(object sender, EventArgs e)
         {
             AddNewMaintenanceRecordForm addNewMaintenanceRecordForm = new AddNewMaintenanceRecordForm();
             addNewMaintenanceRecordForm.Show();

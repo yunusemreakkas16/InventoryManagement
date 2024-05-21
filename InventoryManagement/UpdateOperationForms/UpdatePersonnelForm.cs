@@ -33,7 +33,12 @@ namespace InventoryManagement
         private void UpdateButton_Click(object sender, EventArgs e)
         {
             int selectedPersonnelId = Convert.ToInt32(PersonnelIdcomboBox.SelectedItem);
-            DB_Operations.UpdatePersonnel(selectedPersonnelId,PersonnelNametextBox.Text,PersonnelSurnametextBox.Text,DepartmenttextBox.Text);
+            if(DB_Operations.UpdatePersonnel(selectedPersonnelId,PersonnelNametextBox.Text,PersonnelSurnametextBox.Text,DepartmenttextBox.Text))
+            {
+                PersonnelPanelForm personnelPanelForm = new PersonnelPanelForm();
+                personnelPanelForm.Show();
+                this.Close();
+            }
         }
     }
 }

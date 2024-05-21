@@ -49,19 +49,23 @@ namespace InventoryManagement
 
         //                                                                                      ***** Add Operations *****
 
-        public static void AddPersonnel(string Name, string Surname, string Department)
+        public static bool AddPersonnel(string Name, string Surname, string Department)
         {
             var newPersonnel = new Personnel { PersonnelName = Name, PersonnelSurname = Surname, PersonnelDepartment = Department };
             dbConnection.Execute("INSERT INTO Personnel (PersonnelName, PersonnelSurname, PersonnelDepartment) VALUES (@PersonnelName, @PersonnelSurname, @PersonnelDepartment)", newPersonnel);
+            MessageBox.Show("New Personnel Added.");
+            return true;
         }
 
-        public static void AddItem(string Name, byte Type, byte Status)
+        public static bool AddItem(string Name, byte Type, byte Status)
         {
             var newItem = new Item { ItemName = Name, ItemType = Type, ItemStatus = Status };
             dbConnection.Execute("INSERT INTO Item (ItemName, ItemType, ItemStatus) VALUES (@ItemName, @ItemType, @ItemStatus)", newItem);
+            MessageBox.Show("New Item Added.");
+            return true;
         }
 
-        public static void AddAssignment(string personnelName, string personnelSurname, string itemName, DateTime assignmentDate, DateTime assignmentEndDate)
+        public static bool AddAssignment(string personnelName, string personnelSurname, string itemName, DateTime assignmentDate, DateTime assignmentEndDate)
         {
             var personnelId = dbConnection.Query<int>("SELECT PersonnelId FROM Personnel WHERE PersonnelName = @PersonnelName AND PersonnelSurname = @PersonnelSurname", new { personnelName, personnelSurname }).Single();
 
@@ -75,14 +79,16 @@ namespace InventoryManagement
                 var newAssignment = new Assignment { AssignmentDate = assignmentDate, AssignmentEndDate = assignmentEndDate, FK_PersonnelId = personnelId, FK_ItemId = itemId };
                 dbConnection.Execute("INSERT INTO Assignment (AssignmentDate, AssignmentEndDate, FK_PersonnelId, FK_ItemId) VALUES (@AssignmentDate, @AssignmentEndDate, @FK_PersonnelId, @FK_ItemId)", newAssignment);
                 MessageBox.Show("New Assignment Added");
+                return true;
             }
             else
             {
                 MessageBox.Show("No assignable item found");
+                return false;
             }
         }
 
-        public static void AddMaintenance(int itemId, byte status, DateTime maintenanceDate, DateTime maintenanceEndDate)
+        public static bool AddMaintenance(int itemId, byte status, DateTime maintenanceDate, DateTime maintenanceEndDate)
         {
             //To control of existing a item in Maintenance Panel
 
@@ -93,78 +99,84 @@ namespace InventoryManagement
                 var newMaintenance = new Maintenance { FK_ItemId = itemId, MaintenanceStatus = status, MaintenanceDate = maintenanceDate, MaintenanceEndDate = maintenanceEndDate };
                 dbConnection.Execute("INSERT INTO Maintenance (FK_ItemId, MaintenanceStatus, MaintenanceDate, MaintenanceEndDate) VALUES (@FK_ItemId, @MaintenanceStatus, @MaintenanceDate, @MaintenanceEndDate)", newMaintenance);
                 MessageBox.Show("New Maintenance record  added");
+                return true;
             }
             else
             {
                 MessageBox.Show("This item already has a maintenance record");
+                return false;
             }
         }
 
 
         //                                                                                      ***** Delete Operations *****
 
-        public static void DeletePersonnel(int personnelId)
+        public static bool DeletePersonnel(int personnelId)
         {
-            if (personnelId == 0) { MessageBox.Show("Item ID can not be 0"); return; }
+            if (personnelId == 0) { MessageBox.Show("Item ID can not be 0"); return false; }
 
             var isPersonnelAssigned = dbConnection.QuerySingleOrDefault("SELECT FK_PersonnelId FROM Assignment WHERE FK_PersonnelId = @personnelId", new {personnelId});
 
             if (isPersonnelAssigned != null )
             {
                 MessageBox.Show("This personnel has assignments. Please delete the assignments first");
-                return;
+                return false;
             }
 
             dbConnection.Execute("DELETE FROM Personnel WHERE PersonnelId = @personnelId", new { personnelId });
             MessageBox.Show("Personnel Deleted");
+            return true;
         }
 
-        public static void DeleteItem(int itemId)
+        public static bool DeleteItem(int itemId)
         {
-            if(itemId == 0) { MessageBox.Show("Item ID can not be 0"); return; }
+            if(itemId == 0) { MessageBox.Show("Item ID can not be 0"); return false; }
 
             var isItemAssigned = dbConnection.QuerySingleOrDefault("SELECT FK_ItemId FROM Assignment WHERE FK_ItemId = @itemId", new {itemId});
             if(isItemAssigned != null)
             {
                 MessageBox.Show("This item has assignment. Please delete the assignment first");
-                return;
+                return false;
             }
 
             var isItemMaintaining = dbConnection.QuerySingleOrDefault("SELECT FK_ItemId FROM Maintenance WHERE FK_ItemId = @itemId ", new {itemId});
             if(isItemMaintaining != null)
             {
                 MessageBox.Show("This item is maintaing. Please delete the maintenance record first");
-                return;
+                return false;
             }
 
             dbConnection.Execute("DELETE FROM Item WHERE ItemId = @ItemId", new { ItemId = itemId });
             MessageBox.Show("Item Deleted");
+            return true;
         }
 
-        public static void DeleteAssignment(int assignmentId)
+        public static bool DeleteAssignment(int assignmentId)
         {
-            if(assignmentId == 0) { MessageBox.Show("Assignment ID can not be 0"); return; }
+            if(assignmentId == 0) { MessageBox.Show("Assignment ID can not be 0"); return false; }
             dbConnection.Execute("DELETE FROM Assignment WHERE AssignmentId = @AssignmentId", new { AssignmentId = assignmentId });
             MessageBox.Show("Assignment Record Deleted");
+            return true ;
         }
 
-        public static void DeleteMaintenance(int maintenanceId)
+        public static bool DeleteMaintenance(int maintenanceId)
         {
-            if(maintenanceId == 0) { MessageBox.Show("Maintenance ID can not be 0"); return; }
+            if(maintenanceId == 0) { MessageBox.Show("Maintenance ID can not be 0"); return false; }
             dbConnection.Execute("DELETE FROM Maintenance WHERE MaintenanceId = @MaintenanceId", new { MaintenanceId = maintenanceId });
             MessageBox.Show("Maintenance Record Deleted");
+            return true;
         }
 
         //                                                                                      ***** Update Operations *****
 
-        public static void UpdatePersonnel(int personnelId, string name, string surname, string department)
+        public static bool UpdatePersonnel(int personnelId, string name, string surname, string department)
         {
             // To avoid Update failures.
 
             if (personnelId == 0 || (string.IsNullOrEmpty(name) && string.IsNullOrEmpty(surname) && string.IsNullOrEmpty(department)))
             {
                 MessageBox.Show("At least one field must be filled and the ID cannot be 0.");
-                return;
+                return false;
             }
             else
             {
@@ -185,39 +197,42 @@ namespace InventoryManagement
                 parameters.Add("@PersonnelId", personnelId);
                 dbConnection.Execute(query, parameters);
                 MessageBox.Show("The update process has been completed.");
+                return true;
             }
         }
 
-        public static void UpdateItem(int itemId, byte? itemStatus = null)
+        public static bool UpdateItem(int itemId, byte? itemStatus = null)
         {
             if (itemId == 0)
             {
                 MessageBox.Show("the ID cannot be 0");
-                return;
+                return false;
             }
 
             dbConnection.Execute("UPDATE Item SET ItemStatus = @ItemStatus WHERE ItemId = @ItemId", new { itemStatus, itemId });
             MessageBox.Show("Item Status Updated");
+            return true;
         }
 
-        public static void UpdateAssignment(int assignmentId, DateTime? endDate)
+        public static bool UpdateAssignment(int assignmentId, DateTime? endDate)
         {
             if (assignmentId == 0 || !endDate.HasValue)
             {
                 MessageBox.Show("ID cannot be 0");
-                return;
+                return false;
             }
 
             dbConnection.Execute("UPDATE Assignment SET AssignmentEndDate = @endDate WHERE AssignmentId = @assignmentId", new { endDate, assignmentId });
             MessageBox.Show("Assignment record updated");
+            return true;
         }
 
-        public static void UpdateMaintenance(int maintenanceId, byte? maintenanceStatus, DateTime? maintenanceEndDate)
+        public static bool UpdateMaintenance(int maintenanceId, byte? maintenanceStatus, DateTime? maintenanceEndDate)
         {
             if ((!maintenanceStatus.HasValue) && (!maintenanceEndDate.HasValue) || maintenanceId == 0)
             {
                 MessageBox.Show("At least one field must be filled and the ID cannot be 0");
-                return;
+                return false;
             }
 
             var query = "UPDATE Maintenance SET ";
@@ -232,6 +247,7 @@ namespace InventoryManagement
             parameters.Add("@MaintenanceId", maintenanceId);
             dbConnection.Execute(query, parameters);
             MessageBox.Show("Maintenance record updated");
+            return true;
         }
 
     }

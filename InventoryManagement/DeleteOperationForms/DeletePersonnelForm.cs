@@ -35,7 +35,12 @@ namespace InventoryManagement
         private void DeleteButton_Click(object sender, EventArgs e)
         {
             // Delete the personnel using the selected name and surname
-            DB_Operations.DeletePersonnel((int)NameSurnamecomboBox.SelectedValue);
+            if(DB_Operations.DeletePersonnel((int)NameSurnamecomboBox.SelectedValue))
+            { 
+                PersonnelPanelForm personnelPanelForm = new PersonnelPanelForm();
+                personnelPanelForm.Show();
+                this.Close();
+            }
         }
 
     }
