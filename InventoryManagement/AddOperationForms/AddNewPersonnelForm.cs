@@ -31,7 +31,11 @@ namespace InventoryManagement
             // Check textboxes are empty or null
             if (!string.IsNullOrWhiteSpace(PersonnelNametextBox.Text) && !string.IsNullOrWhiteSpace(PersonnelSurnametextBox.Text) && !string.IsNullOrWhiteSpace(PersonnelDepartmenttextBox.Text))
             {
-                if(DB_Operations.AddPersonnel(PersonnelNametextBox.Text, PersonnelSurnametextBox.Text, PersonnelDepartmenttextBox.Text))
+                string name = TextBoxOperations.AdjustTextBoxNameValue(PersonnelNametextBox.Text);
+                string surname = TextBoxOperations.AdjustTextBoxNameValue(PersonnelSurnametextBox.Text);
+                string department = PersonnelDepartmenttextBox.Text.Substring(0, 1).ToUpper() + PersonnelDepartmenttextBox.Text.Substring(1);
+
+                if (DB_Operations.AddPersonnel(name, surname, department))
                 {
                     PersonnelPanelForm personnelPanelForm = new PersonnelPanelForm();
                     personnelPanelForm.Show();
@@ -41,7 +45,7 @@ namespace InventoryManagement
             else
             {
                 // To warn user who  makes  empty spaces.
-                MessageBox.Show("Please fill the boxes that you’ve left empty.");
+                MessageBox.Show("Please fill the boxes that you’ve left empty");
             }
         }
     }

@@ -33,7 +33,9 @@ namespace InventoryManagement
                 byte itemStatus;
                 if (byte.TryParse(ItemTypetextBox.Text, out itemType) && byte.TryParse(ItemStatustextBox.Text, out itemStatus))
                 {
-                    if(DB_Operations.AddItem(ItemNametextBox.Text, itemType, itemStatus))
+                    string itemName = ItemNametextBox.Text.Substring(0, 1).ToUpper() + ItemNametextBox.Text.Substring(1); 
+
+                    if(DB_Operations.AddItem(itemName, itemType, itemStatus))
                     {
                         ItemPanelForm itemPanelForm = new ItemPanelForm();
                         itemPanelForm.Show();
@@ -42,14 +44,14 @@ namespace InventoryManagement
                 }
                 else
                 {
-                    MessageBox.Show("Item Type and Item Status must be byte values.");
+                    MessageBox.Show("Item Type and Item Status must be byte values");
                 }
 
             }
             else
             {
                 // To warn user who  makes  empty spaces.
-                MessageBox.Show("Please fill the boxes that you’ve left empty.");
+                MessageBox.Show("Please fill the boxes that you’ve left empty");
             }
         }
     }

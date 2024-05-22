@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\panelforms\\getauthenticateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\panelforms\\getauthenticateform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|c:\\users\\murat\\onedrive\\belgeler\\unreal projects\\github\\inventorymanagement\\inventorymanagement\\textboxoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\textboxoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\addoperationforms\\addnewpersonnelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\addoperationforms\\addnewpersonnelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\addoperationforms\\addnewitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\addoperationforms\\addnewitemform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,19 +53,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "GetAuthenticateForm.cs",
-              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\PanelForms\\GetAuthenticateForm.cs",
-              "RelativeDocumentMoniker": "InventoryManagement\\PanelForms\\GetAuthenticateForm.cs",
-              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\PanelForms\\GetAuthenticateForm.cs",
-              "RelativeToolTip": "InventoryManagement\\PanelForms\\GetAuthenticateForm.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAdAAAA",
+              "Title": "TextBoxOperations.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\TextBoxOperations.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\TextBoxOperations.cs",
+              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\TextBoxOperations.cs",
+              "RelativeToolTip": "InventoryManagement\\TextBoxOperations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T10:45:59.264Z",
+              "WhenOpened": "2024-05-22T06:40:10.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AddNewPersonnelForm.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewPersonnelForm.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\AddOperationForms\\AddNewPersonnelForm.cs",
+              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewPersonnelForm.cs",
+              "RelativeToolTip": "InventoryManagement\\AddOperationForms\\AddNewPersonnelForm.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAApwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T05:59:13.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AddNewItemForm.cs",
+              "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewItemForm.cs",
+              "RelativeDocumentMoniker": "InventoryManagement\\AddOperationForms\\AddNewItemForm.cs",
+              "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewItemForm.cs",
+              "RelativeToolTip": "InventoryManagement\\AddOperationForms\\AddNewItemForm.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCMAAAB6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T05:59:07.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Authentication.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\Authentication.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Authentication.cs",
@@ -65,25 +97,23 @@
               "RelativeToolTip": "InventoryManagement\\Authentication.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T11:52:21.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T11:52:21.623Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DB_Operations.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\DB_Operations.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DB_Operations.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\DB_Operations.cs",
               "RelativeToolTip": "InventoryManagement\\DB_Operations.cs",
-              "ViewState": "AQIAACYAAAAAAAAAAAAIwD8AAAAvAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowDMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T12:04:13.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T12:04:13.245Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\Program.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Program.cs",
@@ -91,8 +121,7 @@
               "RelativeToolTip": "InventoryManagement\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T14:41:16.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T14:41:16.762Z"
             }
           ]
         }
