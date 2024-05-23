@@ -12,6 +12,11 @@ namespace InventoryManagement
     {
         public static string AdjustTextBoxNameValue(string str)
         {
+            // Limits 50 Characters to avoid truncate exceptions!
+            {
+                str = str.Substring(0, 50);
+            }
+
             string result = string.Empty;
             bool newWord = true;
 
@@ -37,5 +42,6 @@ namespace InventoryManagement
             result = Regex.Replace(result, @"\s+", " ");
             return result;
         }
+
     }
 }

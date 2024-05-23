@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\textboxoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\db_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\db_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\addoperationforms\\addnewpersonnelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\addoperationforms\\addnewpersonnelform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\db_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|solutionrelative:inventorymanagement\\db_operations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{67DC2749-D178-490B-8497-F231C23C7ACA}|InventoryManagement\\InventoryManagement.csproj|C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\inventorymanagement\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,14 +58,14 @@
               "RelativeDocumentMoniker": "InventoryManagement\\TextBoxOperations.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\TextBoxOperations.cs",
               "RelativeToolTip": "InventoryManagement\\TextBoxOperations.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-22T06:40:10.567Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "AddNewPersonnelForm.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewPersonnelForm.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\AddOperationForms\\AddNewPersonnelForm.cs",
@@ -77,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "AddNewItemForm.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\AddOperationForms\\AddNewItemForm.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\AddOperationForms\\AddNewItemForm.cs",
@@ -89,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Authentication.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\Authentication.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\Authentication.cs",
@@ -101,15 +101,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "DB_Operations.cs",
               "DocumentMoniker": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\DB_Operations.cs",
               "RelativeDocumentMoniker": "InventoryManagement\\DB_Operations.cs",
               "ToolTip": "C:\\Users\\murat\\OneDrive\\Belgeler\\Unreal Projects\\GitHub\\InventoryManagement\\InventoryManagement\\DB_Operations.cs",
               "RelativeToolTip": "InventoryManagement\\DB_Operations.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAowDMAAAAAAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAiwDYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T12:04:13.245Z"
+              "WhenOpened": "2024-04-30T12:04:13.245Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
