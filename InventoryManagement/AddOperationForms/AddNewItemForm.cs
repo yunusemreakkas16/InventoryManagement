@@ -33,9 +33,9 @@ namespace InventoryManagement
                 byte itemStatus;
                 if (byte.TryParse(ItemTypetextBox.Text, out itemType) && byte.TryParse(ItemStatustextBox.Text, out itemStatus))
                 {
-                    string itemName = ItemNametextBox.Text.Substring(0, 1).ToUpper() + ItemNametextBox.Text.Substring(1); 
+                    string itemName = TextBoxOperations.AdjustTextBoxNameValue(ItemNametextBox.Text);
 
-                    if(DB_Operations.AddItem(itemName, itemType, itemStatus))
+                    if (DB_Operations.AddItem(itemName, itemType, itemStatus))
                     {
                         ItemPanelForm itemPanelForm = new ItemPanelForm();
                         itemPanelForm.Show();

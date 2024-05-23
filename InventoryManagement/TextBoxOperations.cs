@@ -12,17 +12,25 @@ namespace InventoryManagement
     {
         public static string AdjustTextBoxNameValue(string str)
         {
-            // Limits 50 Characters to avoid truncate exceptions!
+            // check null!
+            if (str == null)
             {
+                return null;
+            }
+
+            // Check if the length of the input string is greater than 50
+            if (str.Length > 50)
+            {
+                // If it is, limit the string to 50 characters
                 str = str.Substring(0, 50);
             }
 
             string result = string.Empty;
             bool newWord = true;
 
-            for(int i = 0; i < str.Length; i++) 
+            for (int i = 0; i < str.Length; i++)
             {
-                if(newWord) 
+                if (newWord)
                 {
                     result += Char.ToUpper(str[i]);
                     newWord = false;
@@ -31,17 +39,41 @@ namespace InventoryManagement
                 {
                     result += Char.ToLower(str[i]);
                 }
-                if (str[i] == ' ') 
+                if (str[i] == ' ')
                 {
                     newWord = true;
                 }
-                 
             }
 
             // Replace multiple spaces with a single space
             result = Regex.Replace(result, @"\s+", " ");
             return result;
         }
+        public static string AdjustTextBoxCharacterLimit(string str) 
+        {
+            if (str == null)
+            {
+                return null;
+            }
 
+            if (str.Length > 50)
+            {
+                // If it is, limit the string to 50 characters
+                str = str.Substring(0, 50);
+            }
+            return str;
+        }
+        public static string AdjustTextBoxUpperCaseFirstCharacter(string str)
+        {
+            if (string.IsNullOrEmpty(str))
+            {
+                return null;
+            }
+            else
+            {
+                str = str.Substring(0, 1).ToUpper() + str.Substring(1);
+                return str;
+            }
+        }
     }
 }

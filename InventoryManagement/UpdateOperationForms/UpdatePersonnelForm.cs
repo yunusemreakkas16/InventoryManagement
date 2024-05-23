@@ -32,8 +32,12 @@ namespace InventoryManagement
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
+            string name = TextBoxOperations.AdjustTextBoxNameValue(PersonnelNametextBox.Text);
+            string surname = TextBoxOperations.AdjustTextBoxNameValue(PersonnelSurnametextBox.Text);
+            string department  = TextBoxOperations.AdjustTextBoxCharacterLimit(DepartmenttextBox.Text);
+            department = TextBoxOperations.AdjustTextBoxUpperCaseFirstCharacter(department);
             int selectedPersonnelId = Convert.ToInt32(PersonnelIdcomboBox.SelectedItem);
-            if(DB_Operations.UpdatePersonnel(selectedPersonnelId,PersonnelNametextBox.Text,PersonnelSurnametextBox.Text,DepartmenttextBox.Text))
+            if(DB_Operations.UpdatePersonnel(selectedPersonnelId,name, surname, department))
             {
                 PersonnelPanelForm personnelPanelForm = new PersonnelPanelForm();
                 personnelPanelForm.Show();

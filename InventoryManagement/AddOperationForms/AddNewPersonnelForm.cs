@@ -33,7 +33,8 @@ namespace InventoryManagement
             {
                 string name = TextBoxOperations.AdjustTextBoxNameValue(PersonnelNametextBox.Text);
                 string surname = TextBoxOperations.AdjustTextBoxNameValue(PersonnelSurnametextBox.Text);
-                string department = PersonnelDepartmenttextBox.Text.Substring(0, 1).ToUpper() + PersonnelDepartmenttextBox.Text.Substring(1);
+                string department = TextBoxOperations.AdjustTextBoxCharacterLimit(PersonnelDepartmenttextBox.Text);
+                department = TextBoxOperations.AdjustTextBoxUpperCaseFirstCharacter(department);
 
                 if (DB_Operations.AddPersonnel(name, surname, department))
                 {
